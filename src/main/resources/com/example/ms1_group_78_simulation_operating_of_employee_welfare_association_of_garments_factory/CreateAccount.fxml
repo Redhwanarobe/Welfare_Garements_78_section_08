@@ -64,9 +64,9 @@
          </font>
       </Label>
       <ComboBox fx:id="roleComboBox" layoutX="357.0" layoutY="401.0" prefHeight="38.0" prefWidth="216.0" promptText="Select User Role" />
-      <Label layoutY="-4.0" prefHeight="59.0" prefWidth="642.0" style="-fx-background-color: black;" text="     Sign Up" textFill="WHITE">
+      <Label layoutY="-4.0" prefHeight="59.0" prefWidth="642.0" style="-fx-background-color: black;" text="                                            Sign Up" textFill="WHITE">
          <font>
-            <Font name="Pristina" size="25.0" />
+            <Font name="Book Antiqua" size="25.0" />
          </font>
       </Label>
    </children>
