@@ -1,5 +1,4 @@
-package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory;
-
+package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
