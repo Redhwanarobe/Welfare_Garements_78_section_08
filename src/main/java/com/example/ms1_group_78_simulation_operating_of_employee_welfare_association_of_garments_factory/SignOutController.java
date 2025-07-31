@@ -22,5 +22,7 @@ public class SignOutController
 
     @javafx.fxml.FXML
     public void yesSignOutOA(ActionEvent actionEvent) {
+
     }
+
 }
