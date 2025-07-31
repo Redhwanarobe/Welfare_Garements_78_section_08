@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="575.0" prefWidth="203.0" style="-fx-background-color: DCCFC0;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="ALL Member Profiles" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Review Member Complain" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Approve Member Financial Aid." />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Approve Budget" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Update ProFile" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Review Suggestions" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Download Suggestion" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Send Announcements" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="204.0" layoutY="22.0" prefHeight="48.0" prefWidth="332.0" text="President Dashboard">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="107.0" prefHeight="25.0" prefWidth="87.0" text="Full Name" />
+            <Label layoutX="109.0" layoutY="407.0" prefHeight="25.0" prefWidth="87.0" text="Address" />
+            <Label layoutX="109.0" layoutY="236.0" prefHeight="25.0" prefWidth="87.0" text="Phone Number" />
+            <Label layoutX="109.0" layoutY="329.0" prefHeight="25.0" prefWidth="87.0" text="Date of birth" />
+            <Label layoutX="109.0" layoutY="164.0" prefHeight="25.0" prefWidth="87.0" text="Nid" />
+            <Label layoutX="544.0" layoutY="107.0" prefHeight="25.0" prefWidth="87.0" text="Employee ID" />
+            <Label layoutX="544.0" layoutY="362.0" prefHeight="25.0" prefWidth="87.0" text="Email" />
+            <Label layoutX="544.0" layoutY="289.0" prefHeight="25.0" prefWidth="87.0" text="Date of joining" />
+            <Label layoutX="544.0" layoutY="224.0" prefHeight="25.0" prefWidth="87.0" text="Gender" />
+            <Label layoutX="544.0" layoutY="164.0" prefHeight="25.0" prefWidth="87.0" text="Blood Group" />
+            <TextField layoutX="108.0" layoutY="132.0" />
+            <TextField layoutX="108.0" layoutY="276.0" />
+            <TextField layoutX="108.0" layoutY="195.0" />
+            <TextField layoutX="544.0" layoutY="132.0" />
+            <TextArea layoutX="106.0" layoutY="450.0" prefHeight="80.0" prefWidth="339.0" />
+            <DatePicker layoutX="109.0" layoutY="362.0" prefHeight="25.0" prefWidth="174.0" />
+            <RadioButton layoutX="544.0" layoutY="253.0" mnemonicParsing="false" text="Male" />
+            <RadioButton layoutX="619.0" layoutY="253.0" mnemonicParsing="false" text="Female" />
+            <RadioButton layoutX="693.0" layoutY="253.0" mnemonicParsing="false" text="Other" />
+            <ComboBox layoutX="544.0" layoutY="195.0" prefWidth="150.0" />
+            <TextField layoutX="544.0" layoutY="317.0" />
+            <TextField layoutX="545.0" layoutY="407.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar prefHeight="25.0" prefWidth="278.0" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.ComplainhistoryView">
+   <children>
+      <Label layoutX="254.0" layoutY="31.0" prefHeight="39.0" prefWidth="365.0" text="Complain History">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TableView layoutX="23.0" layoutY="209.0" prefHeight="148.0" prefWidth="799.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Complain Id" />
+          <TableColumn prefWidth="75.0" text="Subject " />
+            <TableColumn prefWidth="124.0" text="Date Submitted" />
+            <TableColumn prefWidth="139.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

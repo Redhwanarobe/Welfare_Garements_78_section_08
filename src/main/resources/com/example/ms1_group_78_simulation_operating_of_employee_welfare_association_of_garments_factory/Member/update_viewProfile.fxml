@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.UpdateViewProfile">
+   <children>
+      <Label layoutX="244.0" layoutY="21.0" prefHeight="39.0" prefWidth="365.0" text="Member Profile Editor">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="140.0" prefHeight="25.0" prefWidth="87.0" text="Full Name" />
+      <Label layoutX="115.0" layoutY="265.0" prefHeight="25.0" prefWidth="87.0" text="Address" />
+      <Label layoutX="115.0" layoutY="206.0" prefHeight="25.0" prefWidth="87.0" text="Phone Number" />
+      <TextField layoutX="244.0" layoutY="140.0" />
+      <TextField layoutX="244.0" layoutY="194.0" />
+      <TextArea layoutX="244.0" layoutY="250.0" prefHeight="80.0" prefWidth="339.0" />
+      <Button layoutX="596.0" layoutY="138.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="edit" />
+      <Button layoutX="691.0" layoutY="138.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="update" />
+      <Button layoutX="596.0" layoutY="191.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="edit" />
+      <Button layoutX="691.0" layoutY="191.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="update" />
+      <Button layoutX="596.0" layoutY="263.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="edit" />
+      <Button layoutX="691.0" layoutY="263.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="update" />
+      <Button layoutX="654.0" layoutY="383.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="GO to Profile" />
+   </children>
+</AnchorPane>
