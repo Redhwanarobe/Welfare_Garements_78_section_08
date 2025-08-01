@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President.MemberProfilesView">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President_UnionLeader.MemberProfilesViewController">
    <children>
       <Label layoutX="264.0" layoutY="41.0" prefHeight="39.0" prefWidth="365.0" text="View member profile">
          <font>

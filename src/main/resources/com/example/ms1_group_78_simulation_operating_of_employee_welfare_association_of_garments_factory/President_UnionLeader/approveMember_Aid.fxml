@@ -8,21 +8,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President.MemberProfilesView">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President_UnionLeader.approveMember_AidController">
    <children>
-      <Label layoutX="264.0" layoutY="41.0" prefHeight="39.0" prefWidth="365.0" text="Review Member Complain">
+      <Label layoutX="225.0" layoutY="48.0" prefHeight="39.0" prefWidth="462.0" text="Approve Member Financial Aid">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
       <TableView layoutX="33.0" layoutY="219.0" prefHeight="148.0" prefWidth="799.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="Complain Id" />
+            <TableColumn prefWidth="75.0" text="Request ID " />
             <TableColumn prefWidth="150.0" text="Member Name" />
-            <TableColumn prefWidth="142.0" text="Complaint Text" />
+            <TableColumn prefWidth="142.0" text="Reason" />
+            <TableColumn prefWidth="142.0" text="Ammount" />
+            <TableColumn prefWidth="142.0" text="Type" />
          </columns>
       </TableView>
-      <Label layoutX="53.0" layoutY="408.0" prefHeight="17.0" prefWidth="138.0" text="Select Complain Id" />
+      <Label layoutX="53.0" layoutY="408.0" prefHeight="17.0" prefWidth="138.0" text="Select Request Id " />
       <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" text="Accept" />
       <Button layoutX="456.0" layoutY="404.0" mnemonicParsing="false" text="Deny" />
       <ComboBox layoutX="166.0" layoutY="404.0" prefWidth="150.0" />

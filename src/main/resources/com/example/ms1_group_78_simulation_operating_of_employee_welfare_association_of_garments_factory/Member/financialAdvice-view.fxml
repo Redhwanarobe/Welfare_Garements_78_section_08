@@ -7,19 +7,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.FinancialAdviceView">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.FinancialAdviceViewController">
    <children>
-      <Button layoutX="60.0" layoutY="90.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Back" />
       <TableView layoutX="43.0" layoutY="229.0" prefHeight="148.0" prefWidth="799.0">
          <columns>
-            <TableColumn prefWidth="110.0" text="Advice Id" />
-            <TableColumn prefWidth="94.0" text="Title " />
-            <TableColumn prefWidth="185.0" text="Category" />
-            <TableColumn prefWidth="169.0" text="Advice" />
+            <TableColumn fx:id="table_M_adviceIDcol_1" prefWidth="110.0" text="Advice Id" />
+            <TableColumn fx:id="table_M_tittlecol_2" prefWidth="94.0" text="Title " />
+            <TableColumn fx:id="tablecol_3" prefWidth="185.0" text="Category" />
+            <TableColumn fx:id="tableadvicecol_4" prefWidth="169.0" text="Advice" />
          </columns>
       </TableView>
-      <Button layoutX="49.0" layoutY="430.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="138.0" text="Download text" />
+      <Button layoutX="49.0" layoutY="430.0" mnemonicParsing="false" onAction="#OAdownloadtext" prefHeight="30.0" prefWidth="138.0" text="Download text" />
       <Label layoutX="274.0" layoutY="51.0" prefHeight="39.0" prefWidth="365.0" text="Financial Advice center">
          <font>
             <Font name="System Bold" size="27.0" />
