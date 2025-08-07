@@ -7,23 +7,19 @@ public class MaintainHealthRecordController
     @javafx.fxml.FXML
     private TableColumn departmentCol;
     @javafx.fxml.FXML
-    private TextField vitalTextfield;
-    @javafx.fxml.FXML
     private TableColumn statusCol;
     @javafx.fxml.FXML
     private TableColumn nameCol;
     @javafx.fxml.FXML
-    private TextArea DiagnoissTextArea;
-    @javafx.fxml.FXML
     private TableColumn employeeIdCol;
     @javafx.fxml.FXML
-    private TextArea tratmentTextArea;
+    private Label ErrorMessagelabel;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void vitalsTextField(ActionEvent actionEvent) {
     }
 
@@ -35,15 +31,15 @@ public class MaintainHealthRecordController
     public void returnHomeButtonOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void UpdateButtonOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void fileUploadButtonOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void selectEmployeeOA(ActionEvent actionEvent) {
     }
 

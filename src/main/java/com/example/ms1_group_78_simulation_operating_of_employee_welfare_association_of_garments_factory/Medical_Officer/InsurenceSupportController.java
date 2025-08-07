@@ -23,15 +23,15 @@ public class InsurenceSupportController
     @javafx.fxml.FXML
     private TableColumn genderCol;
     @javafx.fxml.FXML
-    private Label remarkLabel;
-    @javafx.fxml.FXML
     private TableView TableView;
+    @javafx.fxml.FXML
+    private TextArea RemarkTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void loadButtonOA(ActionEvent actionEvent) {
     }
 

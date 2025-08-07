@@ -2,16 +2,17 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 
 public class MonitorAgrreementsController
 {
+
     @javafx.fxml.FXML
-    private CheckBox checktradeCB;
+    private TextArea commentTextArea;
     @javafx.fxml.FXML
-    private TextArea commentTextarea;
+    private TableColumn complienceTextCol;
     @javafx.fxml.FXML
-    private CheckBox checkcomplienceCB;
+    private TableColumn laborTextCol;
     @javafx.fxml.FXML
-    private CheckBox checklabourCB;
+    private TableColumn tradeTextCol;
     @javafx.fxml.FXML
-    private TextArea reviewTextarea;
+    private TableView TableView;
 
     @javafx.fxml.FXML
     public void initialize() {

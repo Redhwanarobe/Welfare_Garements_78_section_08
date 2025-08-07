@@ -25,11 +25,11 @@ public class AssistCompansation
     public void submitButtonOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void verifyOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void ShowOA(ActionEvent actionEvent) {
     }
 }

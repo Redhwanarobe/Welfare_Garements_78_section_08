@@ -4,13 +4,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="772.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Medical_Officer.MaintainHealthRecordController">
+<AnchorPane prefHeight="539.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Medical_Officer.MaintainHealthRecordController">
    <children>
       <TextField layoutX="122.0" layoutY="33.0" onAction="#IdTextField" />
       <Text layoutX="31.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search ID" />
@@ -23,17 +21,8 @@
             <TableColumn fx:id="statusCol" prefWidth="75.0" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="278.0" layoutY="338.0" mnemonicParsing="false" onAction="#selectEmployeeOA" text="Select Employee" />
-      <TextArea fx:id="DiagnoissTextArea" layoutX="81.0" layoutY="416.0" prefHeight="111.0" prefWidth="200.0" />
-      <TextField fx:id="vitalTextfield" layoutX="448.0" layoutY="416.0" onAction="#vitalsTextField" />
-      <Text layoutX="356.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vital Field" />
-      <TextArea fx:id="tratmentTextArea" layoutX="366.0" layoutY="483.0" prefHeight="88.0" prefWidth="200.0" />
-      <Text layoutX="319.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Treatmentment Field" />
-      <Button layoutX="501.0" layoutY="580.0" mnemonicParsing="false" onAction="#UpdateButtonOA" text="Update" />
-      <Text layoutX="16.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagnosis Field" />
-      <Text layoutX="170.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Name" />
       <Label fx:id="filenameLabel" layoutX="245.0" layoutY="633.0" prefHeight="25.0" prefWidth="133.0" />
-      <Button layoutX="171.0" layoutY="675.0" mnemonicParsing="false" onAction="#fileUploadButtonOA" text="File Upload" />
-      <Button layoutX="582.0" layoutY="721.0" mnemonicParsing="false" onAction="#returnHomeButtonOA" text="Return Home" />
+      <Button layoutX="110.0" layoutY="499.0" mnemonicParsing="false" onAction="#returnHomeButtonOA" text="Return Home" />
+      <Label fx:id="ErrorMessagelabel" layoutX="352.0" layoutY="413.0" text="Label" />
    </children>
 </AnchorPane>

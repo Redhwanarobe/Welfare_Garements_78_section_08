@@ -5,8 +5,6 @@ public class SeeRegeterMember
     @javafx.fxml.FXML
     private TableColumn idCol;
     @javafx.fxml.FXML
-    private TableColumn statusCol;
-    @javafx.fxml.FXML
     private TableColumn nameCol;
     @javafx.fxml.FXML
     private TableColumn deprtmentCol;
@@ -14,6 +12,8 @@ public class SeeRegeterMember
     private TableColumn contactNumberCol;
     @javafx.fxml.FXML
     private TableView TableViewfxid;
+    @javafx.fxml.FXML
+    private TableColumn AddressCol;
 
     @javafx.fxml.FXML
     public void initialize() {

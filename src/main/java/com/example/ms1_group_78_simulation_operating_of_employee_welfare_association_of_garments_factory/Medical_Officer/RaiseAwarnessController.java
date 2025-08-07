@@ -6,6 +6,8 @@ public class RaiseAwarnessController
     private DatePicker datepickerfield;
     @javafx.fxml.FXML
     private ComboBox meterialComboBox;
+    @javafx.fxml.FXML
+    private AnchorPane SucesfullsentLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
