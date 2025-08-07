@@ -45,7 +45,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox fx:id="genderCombbox" layoutX="66.0" layoutY="402.0" prefHeight="38.0" prefWidth="216.0" promptText="Select Gender" />
+      <ComboBox fx:id="genderComboBox" layoutX="66.0" layoutY="402.0" prefHeight="38.0" prefWidth="216.0" promptText="Select Gender" />
       <PasswordField fx:id="passwordField" layoutX="66.0" layoutY="320.0" prefHeight="38.0" prefWidth="216.0" />
       <Button layoutX="220.0" layoutY="509.0" mnemonicParsing="false" onAction="#createButton" prefHeight="66.0" prefWidth="216.0" style="-fx-background-color: black;" text="Create Account" textFill="WHITE">
          <font>
@@ -67,6 +67,11 @@
       <Label layoutY="-4.0" prefHeight="59.0" prefWidth="642.0" style="-fx-background-color: black;" text="                                            Sign Up" textFill="WHITE">
          <font>
             <Font name="Book Antiqua" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="68.0" layoutY="65.0" prefHeight="52.0" prefWidth="506.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
          </font>
       </Label>
    </children>
