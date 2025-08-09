@@ -1,7 +1,7 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory;
 
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Event_manager.EventdashboardController;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Event_manager.Eventmanager;
-import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -28,7 +28,7 @@ public class LoginController
     ObservableList<Eventmanager> eventmanagerObservableList = FXCollections.observableArrayList();
     @javafx.fxml.FXML
     public void initialize() {
-        Eventmanager eventmanager = new Eventmanager("Eventmanager","01855456","event@gmail.com","Basundhara","123456",LocalDate.of(1990,2,22));
+        Eventmanager eventmanager = new Eventmanager("Event manager","01254451","event@gmail.com","bashundhara","1111",LocalDate.of(1990,4,4));
         eventmanagerObservableList.add(eventmanager);
     }
 
@@ -58,13 +58,15 @@ public class LoginController
         }
         if (flag) {
             if (id.length() == 4) {
-                //login as a eventmanager
+                //login as an event manager
 
                 for (Eventmanager eventmanager : eventmanagerObservableList){
-                    if (eventmanager.login(id,password)){
+                    if (eventmanager.login(id,password) != null){
                         Parent root = null;
                         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Event_manager/eventdashboard.fxml"));
                         root = fxmlLoader.load();
+                        EventdashboardController eventdashboardController = fxmlLoader.getController();
+                        eventdashboardController.setter(eventmanager);
                         Scene scene = new Scene(root);
                         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
                         stage.setScene(scene);
@@ -72,7 +74,7 @@ public class LoginController
                         stage.show();
                     }
                 }
-//                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Event_manager/eventdashboard.fxml"));
+//                FXMLLoader = new FXMLLoader(getClass().getResource("Event_manager/eventdashboard.fxml"));
 //                Scene scene = new Scene(fxmlLoader.load());
 //                Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
 //                stage.setTitle("Event manager");

@@ -21,6 +21,13 @@ public class EventdashboardController
     @javafx.fxml.FXML
     private BorderPane bordarphane;
 
+    Eventmanager eventmanager;
+
+    public void setter(Eventmanager eventmanager){
+        this.eventmanager = eventmanager;
+        eventmanagerInfoTA.setText(eventmanager.toString());
+    };
+
     @javafx.fxml.FXML
     public void initialize() {
     }
