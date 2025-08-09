@@ -6,14 +6,13 @@ import javafx.scene.control.TableView;
 
 public class DevelopmentTraining
 {
+
     @javafx.fxml.FXML
-    private TableColumn titleCol;
+    private TextField titleTextField;
     @javafx.fxml.FXML
-    private TableColumn topicCol;
+    private TextField objectiveTextField;
     @javafx.fxml.FXML
-    private TableColumn objectiveCol;
-    @javafx.fxml.FXML
-    private TableView tableViewTextfield;
+    private TextField topicTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -23,11 +22,15 @@ public class DevelopmentTraining
     public void returnOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void SubmitAndSaveOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void createOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void SubmitOA(ActionEvent actionEvent) {
     }
 }

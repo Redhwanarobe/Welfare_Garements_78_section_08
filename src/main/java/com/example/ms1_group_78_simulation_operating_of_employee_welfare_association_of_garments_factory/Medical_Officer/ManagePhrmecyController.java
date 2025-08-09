@@ -19,16 +19,26 @@ public class ManagePhrmecyController
     private ComboBox ModuleComboBox;
     @javafx.fxml.FXML
     private TableView TableView;
+    @javafx.fxml.FXML
+    private TextField NameTextField;
+    @javafx.fxml.FXML
+    private TextField MedicinetextField;
+    @javafx.fxml.FXML
+    private DatePicker datepickerFxid;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void loadButtonOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void returnHomeOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void updateButtonOA(ActionEvent actionEvent) {
     }
 }

@@ -15,11 +15,17 @@ public class MedicalOfficerController
     @javafx.fxml.FXML
     private DatePicker dtepickerField;
     @javafx.fxml.FXML
-    private Label confirmationLavel;
-    @javafx.fxml.FXML
-    private TextArea feedbackTextarea;
-    @javafx.fxml.FXML
     private TextField topicTextField;
+    @javafx.fxml.FXML
+    private TableColumn WeightCol;
+    @javafx.fxml.FXML
+    private TableColumn BpCol;
+    @javafx.fxml.FXML
+    private TableColumn sugarCol;
+    @javafx.fxml.FXML
+    private TableColumn BloodGroupCol;
+    @javafx.fxml.FXML
+    private TableView TableView;
 
     @javafx.fxml.FXML
     public void initialize() {

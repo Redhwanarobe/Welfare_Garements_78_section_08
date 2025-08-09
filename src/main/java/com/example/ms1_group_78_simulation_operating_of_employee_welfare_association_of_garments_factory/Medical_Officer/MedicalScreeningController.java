@@ -6,19 +6,7 @@ import javafx.scene.control.*;
 public class MedicalScreeningController
 {
     @javafx.fxml.FXML
-    private TableColumn WeightCol;
-    @javafx.fxml.FXML
-    private TableColumn BpCol;
-    @javafx.fxml.FXML
-    private Button saveHealthDataButton;
-    @javafx.fxml.FXML
-    private TableColumn nameCol;
-    @javafx.fxml.FXML
-    private TableView TableVIew;
-    @javafx.fxml.FXML
     private TextField timeTextField;
-    @javafx.fxml.FXML
-    private TableColumn SugarLevelCol;
     @javafx.fxml.FXML
     private DatePicker datepickerFied;
     @javafx.fxml.FXML
