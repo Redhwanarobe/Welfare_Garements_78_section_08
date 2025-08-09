@@ -1,5 +1,7 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member;
 
+import javafx.scene.control.TableColumn;
+
 public class ComplainhistoryViewController
 {
     @javafx.fxml.FXML

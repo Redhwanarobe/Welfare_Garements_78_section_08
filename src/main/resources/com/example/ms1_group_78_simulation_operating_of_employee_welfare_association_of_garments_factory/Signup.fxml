@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.SignupController">
+   <children>
+      <Label layoutX="367.0" layoutY="29.0" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="84.0" text="Nmae" />
+      <Label layoutX="66.0" layoutY="118.0" text="Email" />
+      <Label layoutX="66.0" layoutY="151.0" text="PhoneNo" />
+      <Label layoutX="434.0" layoutY="151.0" text="Address" />
+      <Label layoutX="434.0" layoutY="84.0" prefHeight="17.0" prefWidth="75.0" text="Date Of Birth" />
+      <Label layoutX="434.0" layoutY="118.0" text="Password" />
+      <TextField fx:id="signupnameTF" layoutX="128.0" layoutY="80.0" />
+      <TextField fx:id="signupemailTF" layoutX="128.0" layoutY="114.0" />
+      <TextField fx:id="signupphnTF" layoutX="128.0" layoutY="147.0" />
+      <TextField fx:id="signuppasswrdTF" layoutX="518.0" layoutY="114.0" />
+      <TextArea fx:id="signupaddrsTA" layoutX="518.0" layoutY="147.0" prefHeight="51.0" prefWidth="200.0" />
+      <DatePicker fx:id="signupdobDP" layoutX="518.0" layoutY="80.0" />
+      <TextArea fx:id="outputTA" layoutX="203.0" layoutY="225.0" prefHeight="180.0" prefWidth="436.0" />
+      <Button layoutX="667.0" layoutY="243.0" mnemonicParsing="false" onAction="#createaccButtonOA" prefHeight="25.0" prefWidth="103.0" text="Create Account" />
+      <Label layoutX="67.0" layoutY="190.0" text="Create account for" />
+      <ComboBox fx:id="createaccountforCB" layoutX="175.0" layoutY="186.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -20,6 +20,7 @@
             <Button layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#assignguardButtonOA" prefHeight="42.0" prefWidth="200.0" text="Assign security guards" />
             <Button layoutX="10.0" layoutY="220.0" mnemonicParsing="false" onAction="#assigncomanagerButtonOA" prefHeight="42.0" prefWidth="200.0" text="Assign CO-manager" />
             <Button layoutX="10.0" layoutY="262.0" mnemonicParsing="false" onAction="#sendreminderButtonOA" prefHeight="42.0" prefWidth="200.0" text="Send Reminder" />
+            <Button layoutX="10.0" layoutY="304.0" mnemonicParsing="false" onAction="#signoutButtonOa" prefHeight="42.0" prefWidth="200.0" text="Sign Out" />
          </children></VBox>
    </left>
    <center>

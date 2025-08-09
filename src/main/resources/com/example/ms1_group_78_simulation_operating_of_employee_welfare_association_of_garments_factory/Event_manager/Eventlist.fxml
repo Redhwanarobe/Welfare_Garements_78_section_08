@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Event_manager.EventlistController">
+   <children>
+      <Label layoutX="273.0" layoutY="27.0" text="Events">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="EventlisttableView" layoutX="28.0" layoutY="82.0" prefHeight="326.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="eventtitleTC" prefWidth="150.0" text="Event title" />
+          <TableColumn fx:id="locationTC" prefWidth="110.0" text="Location" />
+            <TableColumn fx:id="dateTC" prefWidth="128.0" text="Date" />
+            <TableColumn fx:id="timeTC" prefWidth="157.0" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

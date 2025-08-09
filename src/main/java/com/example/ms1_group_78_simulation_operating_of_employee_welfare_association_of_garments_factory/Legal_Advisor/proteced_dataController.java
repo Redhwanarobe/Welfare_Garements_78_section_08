@@ -1,9 +1,14 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Legal_Advisor;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
+
 public class proteced_dataController
 {
     @javafx.fxml.FXML
-    private TextArea textAreafxid;
+    private
+    TextArea textAreafxid;
     @javafx.fxml.FXML
     private ComboBox departmentComboBox;
 
