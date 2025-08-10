@@ -26,6 +26,8 @@ public class EventlistController
     Events events;
 
     ObservableList<Events> eventsObservableList = FXCollections.observableArrayList();
+    @javafx.fxml.FXML
+    private TableColumn<Events, Integer> attendanceTC;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -33,6 +35,7 @@ public class EventlistController
         locationTC.setCellValueFactory(new PropertyValueFactory<>("location"));
         timeTC.setCellValueFactory(new PropertyValueFactory<>("time"));
         dateTC.setCellValueFactory(new PropertyValueFactory<>("date"));
+        attendanceTC.setCellValueFactory(new PropertyValueFactory<>("attendance"));
 
         EventlisttableView.setItems(Event_details.getEventsObservableList());
     }

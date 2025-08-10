@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Training_coordinator.ProgramsController">
+   <children>
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="86.0" prefHeight="333.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="titleTC" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="locationTC" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="timeTC" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="dateTC" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="segmantTC" prefWidth="75.0" text="Segmant" />
+            <TableColumn fx:id="descriptionTC" prefWidth="94.0" text="Description" />
+            <TableColumn fx:id="attendanceTC" prefWidth="98.0" text="Attendance" />
+        </columns>
+      </TableView>
+      <Label layoutX="269.0" layoutY="28.0" text="Programms">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
