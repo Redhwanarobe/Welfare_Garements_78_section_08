@@ -1,6 +1,9 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Event_manager;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
@@ -18,7 +21,6 @@ public class CreateeventsController
     @javafx.fxml.FXML
     private TextField eventtimeTF;
 
-    ArrayList<Events> events = new ArrayList<Events>();
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -35,9 +37,17 @@ public class CreateeventsController
         time = eventtimeTF.getText();
         date = eventdatepickerDP.getValue();
 
-        Events events1 = new Events(title,location,time,date);
-        events.add(events1);
-        System.out.println(events);
-        events.clear();
+        if (title.isEmpty() || location.isEmpty() || time.isEmpty() || date == null) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Fill the fields");
+            alert.showAndWait();
+            return;
+        }
+        Events events = new Events(title,location,time,date);
+        Event_details.addevents(events);
+        eventtittleTF.clear();
+        locationTF.clear();
+        eventtimeTF.clear();
+        eventdatepickerDP.setValue(null);
     }
 }
