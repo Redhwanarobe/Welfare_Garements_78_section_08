@@ -3,18 +3,19 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 import java.time.LocalDate;
 import java.util.Objects;
 
-public abstract class User {
+public abstract class  User {
     private String id,name,phoneNo,email,address,password;
-    private LocalDate dob;
+    private LocalDate dob ,doj;
 
     public User(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
-        this.id = this.generateID();
+
         this.name = name;
         this.phoneNo = phoneNo;
         this.email = email;
         this.address = address;
         this.password = password;
         this.dob = dob;
+        this.doj= LocalDate.now();
     }
 
     public String getId() {

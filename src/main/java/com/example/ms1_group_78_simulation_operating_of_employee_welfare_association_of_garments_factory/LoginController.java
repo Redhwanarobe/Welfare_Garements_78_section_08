@@ -23,7 +23,7 @@ public class LoginController
     @javafx.fxml.FXML
     private TextField loginPasswordTF;
 
-    Alert alert;
+
 
     ObservableList<Eventmanager> eventmanagerObservableList = FXCollections.observableArrayList();
     @javafx.fxml.FXML
@@ -48,15 +48,64 @@ public class LoginController
 
         if(id.isBlank()){
             flag = false;
-            erroralert.setTitle("User ID Error");
-            erroralert.setContentText("User ID can not be blank.");
+            erroralert.setTitle("user id errod");
+            erroralert.setTitle("User id can not be blank");
+            erroralert.showAndWait();
+
+
+
         }
         if(password.isBlank()){
-            flag = false;
-            erroralert.setTitle("Password Error");
-            erroralert.setContentText("Password can not be blank.");
+            flag =false;
+            erroralert.setTitle("password id error");
+            erroralert.setTitle("password can not be blank");
+            erroralert.showAndWait();
         }
-        if (flag) {
+        if (flag){
+            if(id.length() == 3 ){
+                // log in as a member
+            }
+            else if(id.length()== 4){
+                // login as a president
+            }
+            if(id.length() == 5 ){
+                // log in as fahim 1
+            }
+            else if(id.length()== 6){
+                // login fahim2
+            }
+            if(id.length() == 7 ){
+                // log in as ornob1
+            }
+            else if(id.length()== 8){
+                // login as a ornob2
+            }
+            if(id.length() == 9 ){
+                // log in as tuhin 1
+            }
+            else if(id.length()== 10){
+                // login as a tuhin 2
+            }
+            else {
+                erroralert.setTitle("user id error");
+                erroralert.setTitle("user id do not exits");
+                erroralert.showAndWait();
+            }
+
+        }
+
+        if(id.length() == 3 ){
+            // log in as a member
+        }
+        else if(id.length()== 4){
+            // login as a president
+        }
+        else {
+            erroralert.setTitle("user id error");
+            erroralert.setTitle("user id do not exits");
+            erroralert.showAndWait();
+        }
+        /*if (flag) {
             if (id.length() == 4) {
                 //login as an event manager
 
@@ -84,11 +133,14 @@ public class LoginController
             else if (id.length() == 5) {
                 //login as a trainingcoordinator
             }
-            else {
-                erroralert.setTitle("User Error");
-                erroralert.setContentText("User type does not exist.");
+                else {
+                    erroralert.setTitle("User Error");
+                    erroralert.setContentText("User type does not exist.");
+                    erroralert.showAndWait() ;
             }
-        }
+
+        } */
+
     }
 
 
