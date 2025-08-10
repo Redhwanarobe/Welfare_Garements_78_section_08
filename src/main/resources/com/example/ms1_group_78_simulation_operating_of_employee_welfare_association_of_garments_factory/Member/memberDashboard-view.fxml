@@ -15,18 +15,19 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.MemberDashboardController">
    <left>
       <VBox prefHeight="575.0" prefWidth="203.0" style="-fx-background-color: DCCFC0;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Update Profile" />
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Submit Complain" />
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="View and export Complain doc" />
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="welfare event announcements" />
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="financial advice &amp;export  doc" />
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Suggestion" />
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="President Annoucemetn" />
-            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="208.0" text="Financial Aid" />
+            <Button mnemonicParsing="false" onAction="#mupdateprofileOA" prefHeight="32.0" prefWidth="208.0" text="Update Profile" />
+            <Button mnemonicParsing="false" onAction="#msubmitcomplainOA" prefHeight="32.0" prefWidth="208.0" text="Submit Complain" />
+            <Button mnemonicParsing="false" onAction="#mexportdoc" prefHeight="32.0" prefWidth="208.0" text="View and export Complain doc" />
+            <Button mnemonicParsing="false" onAction="#mwelfareOA" prefHeight="32.0" prefWidth="208.0" text="welfare event announcements" />
+            <Button mnemonicParsing="false" onAction="#mfinancialadviceOA" prefHeight="32.0" prefWidth="208.0" text="financial advice &amp;export  doc" />
+            <Button mnemonicParsing="false" onAction="#msuggestionOA" prefHeight="32.0" prefWidth="208.0" text="Suggestion" />
+            <Button mnemonicParsing="false" onAction="#mpresidentannoucementOA" prefHeight="32.0" prefWidth="208.0" text="President Annoucemetn" />
+            <Button mnemonicParsing="false" onAction="#mFinancialAidOA" prefHeight="32.0" prefWidth="208.0" text="Financial Aid" />
+            <Button mnemonicParsing="false" onAction="#msignOutOA" prefHeight="32.0" prefWidth="208.0" text="SignOut" />
          </children>
       </VBox>
    </left>

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.FinancialAidApplicationViewController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.FinancialAidApplicationController">
    <children>
       <Button layoutX="59.0" layoutY="440.0" mnemonicParsing="false" onAction="#OAsubmit" prefHeight="30.0" prefWidth="138.0" text="Submit Aplication" />
       <Label layoutX="284.0" layoutY="61.0" prefHeight="39.0" prefWidth="365.0" text="Financial Aid application">

@@ -2,23 +2,26 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
-public class FinancialAdviceViewController
+public class ComplainhistoryController
 {
     @javafx.fxml.FXML
-    private TableColumn tableadvicecol_4;
+    private TableColumn table_M_subject_M_col_2;
     @javafx.fxml.FXML
-    private TableColumn tablecol_3;
+    private TableColumn tMcol_1;
     @javafx.fxml.FXML
-    private TableColumn table_M_adviceIDcol_1;
+    private TableColumn table_M_Date_Id_Mcol_3;
     @javafx.fxml.FXML
-    private TableColumn table_M_tittlecol_2;
+    private TableColumn table_M_Statud_Id_M;
+    @javafx.fxml.FXML
+    private TableView tablecomplain;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void OAdownloadtext(ActionEvent actionEvent) {
+    public void exportOA(ActionEvent actionEvent) {
     }
 }
