@@ -6,22 +6,15 @@ import javafx.scene.control.TableView;
 
 public class ComplainhistoryController
 {
+
     @javafx.fxml.FXML
-    private TableColumn table_M_subject_M_col_2;
-    @javafx.fxml.FXML
-    private TableColumn tMcol_1;
-    @javafx.fxml.FXML
-    private TableColumn table_M_Date_Id_Mcol_3;
-    @javafx.fxml.FXML
-    private TableColumn table_M_Statud_Id_M;
-    @javafx.fxml.FXML
-    private TableView tablecomplain;
+    private TextArea fasfaesfaw;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void exportOA(ActionEvent actionEvent) {
     }
 }
