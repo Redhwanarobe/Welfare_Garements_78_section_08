@@ -1,32 +1,27 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President_UnionLeader;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class ReviewComplainViewController
+public class ExportFeedbackController
 {
     @javafx.fxml.FXML
-    private TableColumn p6col1;
+    private TableColumn p_02_tablecol_01;
     @javafx.fxml.FXML
-    private ComboBox p6combox;
+    private TableColumn p_02_tablecol3;
     @javafx.fxml.FXML
-    private TableView table;
+    private TableView tablep;
     @javafx.fxml.FXML
-    private TableColumn p6col2;
+    private TableColumn p_02tablecol4;
     @javafx.fxml.FXML
-    private TableColumn p6col3;
+    private TableColumn p_02tablecol_2;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void p6denyOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void p6acceptOA(ActionEvent actionEvent) {
+    public void p_02downloadOA(ActionEvent actionEvent) {
     }
 }

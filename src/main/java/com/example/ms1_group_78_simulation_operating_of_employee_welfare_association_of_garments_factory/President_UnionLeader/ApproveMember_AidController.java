@@ -5,28 +5,32 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class ReviewComplainViewController
+public class ApproveMember_AidController
 {
     @javafx.fxml.FXML
-    private TableColumn p6col1;
+    private TableColumn p3col5;
     @javafx.fxml.FXML
-    private ComboBox p6combox;
+    private TableColumn p3col1;
     @javafx.fxml.FXML
-    private TableView table;
+    private TableColumn p3col2;
     @javafx.fxml.FXML
-    private TableColumn p6col2;
+    private TableView p3table;
     @javafx.fxml.FXML
-    private TableColumn p6col3;
+    private TableColumn p3col3;
+    @javafx.fxml.FXML
+    private TableColumn p3col4;
+    @javafx.fxml.FXML
+    private ComboBox p3combox;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void p6denyOA(ActionEvent actionEvent) {
+    public void p3denyOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void p6acceptOA(ActionEvent actionEvent) {
+    public void p3acceptOA(ActionEvent actionEvent) {
     }
 }

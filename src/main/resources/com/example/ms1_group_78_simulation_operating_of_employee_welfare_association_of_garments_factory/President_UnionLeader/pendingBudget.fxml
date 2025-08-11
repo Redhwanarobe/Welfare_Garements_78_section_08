@@ -15,17 +15,17 @@
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <TableView layoutX="33.0" layoutY="219.0" prefHeight="148.0" prefWidth="799.0">
+      <TableView fx:id="table" layoutX="33.0" layoutY="219.0" prefHeight="148.0" prefWidth="799.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="Request ID " />
-            <TableColumn prefWidth="150.0" text="Program Name" />
-            <TableColumn prefWidth="142.0" text="Amount" />
-            <TableColumn prefWidth="142.0" text="Purpose" />
+            <TableColumn fx:id="p4col1" prefWidth="75.0" text="Request ID " />
+            <TableColumn fx:id="p4col2" prefWidth="150.0" text="Program Name" />
+            <TableColumn fx:id="p4col3" prefWidth="142.0" text="Amount" />
+            <TableColumn fx:id="p4col4" prefWidth="142.0" text="Purpose" />
          </columns>
       </TableView>
       <Label layoutX="53.0" layoutY="408.0" prefHeight="17.0" prefWidth="138.0" text="Select Request Id " />
-      <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" text="Accept" />
-      <Button layoutX="456.0" layoutY="404.0" mnemonicParsing="false" text="Deny" />
-      <ComboBox layoutX="166.0" layoutY="404.0" prefWidth="150.0" />
+      <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" onAction="#p4acceptOA" text="Accept" />
+      <Button layoutX="456.0" layoutY="404.0" mnemonicParsing="false" onAction="#p4denyOA" text="Deny" />
+      <ComboBox fx:id="p4combox" layoutX="166.0" layoutY="404.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

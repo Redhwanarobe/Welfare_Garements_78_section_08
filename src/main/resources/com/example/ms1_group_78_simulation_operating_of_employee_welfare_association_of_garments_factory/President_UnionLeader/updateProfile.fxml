@@ -17,15 +17,15 @@
       <Label layoutX="115.0" layoutY="140.0" prefHeight="25.0" prefWidth="87.0" text="Full Name" />
       <Label layoutX="115.0" layoutY="265.0" prefHeight="25.0" prefWidth="87.0" text="Address" />
       <Label layoutX="115.0" layoutY="206.0" prefHeight="25.0" prefWidth="87.0" text="Phone Number" />
-      <TextField layoutX="244.0" layoutY="140.0" />
-      <TextField layoutX="244.0" layoutY="194.0" />
-      <TextArea layoutX="244.0" layoutY="250.0" prefHeight="80.0" prefWidth="339.0" />
-      <Button layoutX="596.0" layoutY="138.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="edit" />
-      <Button layoutX="691.0" layoutY="138.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="update" />
-      <Button layoutX="596.0" layoutY="191.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="edit" />
-      <Button layoutX="691.0" layoutY="191.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="update" />
-      <Button layoutX="596.0" layoutY="263.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="edit" />
-      <Button layoutX="691.0" layoutY="263.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="update" />
-      <Button layoutX="654.0" layoutY="383.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="GO to Profile" />
+      <TextField fx:id="p5name" layoutX="244.0" layoutY="140.0" />
+      <TextField fx:id="p5phonenumber" layoutX="244.0" layoutY="194.0" />
+      <TextArea fx:id="p5textarea" layoutX="244.0" layoutY="250.0" prefHeight="80.0" prefWidth="339.0" />
+      <Button layoutX="596.0" layoutY="138.0" mnemonicParsing="false" onAction="#p5editOA" prefHeight="30.0" prefWidth="75.0" text="edit" />
+      <Button layoutX="691.0" layoutY="138.0" mnemonicParsing="false" onAction="#p5updatenameOA" prefHeight="30.0" prefWidth="75.0" text="update" />
+      <Button layoutX="596.0" layoutY="191.0" mnemonicParsing="false" onAction="#p5phoneeditOA" prefHeight="30.0" prefWidth="75.0" text="edit" />
+      <Button layoutX="691.0" layoutY="191.0" mnemonicParsing="false" onAction="#p5phonenumberupdate" prefHeight="30.0" prefWidth="75.0" text="update" />
+      <Button layoutX="596.0" layoutY="263.0" mnemonicParsing="false" onAction="#p5AddressOA" prefHeight="30.0" prefWidth="75.0" text="edit" />
+      <Button layoutX="691.0" layoutY="263.0" mnemonicParsing="false" onAction="#p5addressupdateOA" prefHeight="30.0" prefWidth="75.0" text="update" />
+      <Button layoutX="654.0" layoutY="383.0" mnemonicParsing="false" onAction="#p5gotoprodashbordOA" prefHeight="30.0" prefWidth="125.0" text="GO to Profile" />
    </children>
 </AnchorPane>

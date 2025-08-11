@@ -15,16 +15,16 @@
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <TableView layoutX="33.0" layoutY="219.0" prefHeight="148.0" prefWidth="799.0">
+      <TableView fx:id="table" layoutX="33.0" layoutY="219.0" prefHeight="148.0" prefWidth="799.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="Complain Id" />
-            <TableColumn prefWidth="150.0" text="Member Name" />
-            <TableColumn prefWidth="142.0" text="Complaint Text" />
+            <TableColumn fx:id="p6col1" prefWidth="75.0" text="Complain Id" />
+            <TableColumn fx:id="p6col2" prefWidth="150.0" text="Member Name" />
+            <TableColumn fx:id="p6col3" prefWidth="142.0" text="Complaint Text" />
          </columns>
       </TableView>
       <Label layoutX="53.0" layoutY="408.0" prefHeight="17.0" prefWidth="138.0" text="Select Complain Id" />
-      <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" text="Accept" />
-      <Button layoutX="456.0" layoutY="404.0" mnemonicParsing="false" text="Deny" />
-      <ComboBox layoutX="166.0" layoutY="404.0" prefWidth="150.0" />
+      <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" onAction="#p6acceptOA" text="Accept" />
+      <Button layoutX="456.0" layoutY="404.0" mnemonicParsing="false" onAction="#p6denyOA" text="Deny" />
+      <ComboBox fx:id="p6combox" layoutX="166.0" layoutY="404.0" prefWidth="150.0" />
    </children>
 </AnchorPane>
