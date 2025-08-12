@@ -10,6 +10,7 @@ public class SignOutController
 
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     @javafx.fxml.FXML

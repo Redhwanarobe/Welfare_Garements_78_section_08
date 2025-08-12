@@ -20,12 +20,12 @@
       <VBox prefHeight="575.0" prefWidth="203.0" style="-fx-background-color: DCCFC0;" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#President_see_meberProfileOA" prefHeight="32.0" prefWidth="208.0" text="ALL Member Profiles" />
-            <Button mnemonicParsing="false" onAction="#presidentReviewmemberComplainOA" prefHeight="32.0" prefWidth="208.0" text="Review Member Complain" />
+            <Button mnemonicParsing="false" onAction="#presidentReviewmemberComplainOA" prefHeight="32.0" prefWidth="208.0" text="FeedbackMember" />
             <Button mnemonicParsing="false" onAction="#presidentApproveAidOA" prefHeight="32.0" prefWidth="208.0" text="Approve Member Financial Aid." />
             <Button mnemonicParsing="false" onAction="#presidentApprovebudgetOA" prefHeight="32.0" prefWidth="208.0" text="Approve Budget" />
             <Button mnemonicParsing="false" onAction="#presidentupadateOA" prefHeight="32.0" prefWidth="208.0" text="Update ProFile" />
-            <Button mnemonicParsing="false" onAction="#presidentReviewOA" prefHeight="32.0" prefWidth="208.0" text="Review Suggestions" />
-            <Button mnemonicParsing="false" onAction="#presidentDownloadOA" prefHeight="32.0" prefWidth="208.0" text="Download Suggestion" />
+            <Button mnemonicParsing="false" onAction="#presidentReviewOA" prefHeight="32.0" prefWidth="208.0" text="MemberComplain" />
+            <Button mnemonicParsing="false" onAction="#presidentDownloadOA" prefHeight="32.0" prefWidth="208.0" text="Download Feedback" />
             <Button mnemonicParsing="false" onAction="#presidentSendAnnoucemntOA" prefHeight="32.0" prefWidth="208.0" text="Send Announcements" />
          </children>
       </VBox>

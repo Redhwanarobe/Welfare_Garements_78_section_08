@@ -18,6 +18,32 @@ public class MemberDashboard extends User {
     }
 
     @Override
+    public String toString() {
+        return
+                super.toString() + '\n'+
+                "EmergencyContact='" + emergencyContact + '\n' +
+                "Status=" + status
+
+                 ;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public String getEmergencyContact() {
+        return emergencyContact;
+    }
+
+    public void setEmergencyContact(String emergencyContact) {
+        this.emergencyContact = emergencyContact;
+    }
+
+    @Override
     public String generateID() {
         String id = "";
         Random random = new Random();
