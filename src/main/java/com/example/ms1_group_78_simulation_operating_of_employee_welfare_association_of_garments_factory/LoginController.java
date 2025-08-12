@@ -35,6 +35,11 @@ public class LoginController
     @javafx.fxml.FXML
     public void signupButtonOA(ActionEvent actionEvent) {
     }
+    @javafx.fxml.FXML
+    public void forgetpassworfButtonOA(ActionEvent actionEvent) {
+
+    }
+
 
     @javafx.fxml.FXML
     public void loginButtonOA(ActionEvent actionEvent) throws IOException {
@@ -136,8 +141,4 @@ public class LoginController
 
 
 
-//
-//    @javafx.fxml.FXML
-//    public void forgetpassworfButtonOA(ActionEvent actionEvent) {
-//    }
-//}
+
