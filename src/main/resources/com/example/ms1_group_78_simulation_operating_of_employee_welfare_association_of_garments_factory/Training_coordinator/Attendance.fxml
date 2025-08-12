@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Training_coordinator.AttendanceController">
    <children>
@@ -14,14 +14,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="155.0" layoutY="114.0" text="Total Invites" />
-      <Label layoutX="155.0" layoutY="163.0" text="Attendees" />
-      <Label layoutX="155.0" layoutY="208.0" text="Attandance Rate" />
-      <Button layoutX="243.0" layoutY="263.0" mnemonicParsing="false" text="Rate" />
-      <Label layoutX="256.0" layoutY="208.0" text="Rate" />
-      <Label layoutX="283.0" layoutY="208.0" text="\%" />
-      <Button layoutX="309.0" layoutY="263.0" mnemonicParsing="false" text="Save" />
-      <TextField layoutX="235.0" layoutY="110.0" />
-      <TextField layoutX="235.0" layoutY="159.0" />
+      <Label layoutX="147.0" layoutY="199.0" text="Attendees" />
+      <Button layoutX="280.0" layoutY="271.0" mnemonicParsing="false" onAction="#saveButtonOA" text="Save" />
+      <TextField fx:id="attendeesTA" layoutX="236.0" layoutY="195.0" />
+      <Label layoutX="147.0" layoutY="140.0" text="Select Program" />
+      <ComboBox fx:id="selectCB" layoutX="235.0" layoutY="136.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

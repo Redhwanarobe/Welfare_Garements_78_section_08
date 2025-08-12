@@ -1,21 +1,22 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Training_coordinator;
 
-import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.User;
-
 import java.time.LocalDate;
 
-public abstract class program {
+public class Program {
     private String title,location,time,segmant,details;
     private LocalDate date;
     private Integer attendance;
 
-    public program(String title, String location, String time, String segmant, String details, LocalDate date, Integer attendance) {
+    public Program(String title, String location, String time, String segmant, String details, LocalDate date) {
         this.title = title;
         this.location = location;
         this.time = time;
         this.segmant = segmant;
         this.details = details;
         this.date = date;
+    }
+
+    public Program(Integer attendance) {
         this.attendance = attendance;
     }
 
@@ -77,7 +78,7 @@ public abstract class program {
 
     @Override
     public String toString() {
-        return "program{" +
+        return "Program{" +
                 "title='" + title + '\'' +
                 ", location='" + location + '\'' +
                 ", time='" + time + '\'' +
