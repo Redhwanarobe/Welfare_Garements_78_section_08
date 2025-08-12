@@ -90,34 +90,33 @@ public class LoginController {
             } else if (id.length() == 6) {
                 // login fahim2
             }
-<<<<<<< HEAD
+
             else if (id.length() == 7) {
-=======
+
             if (id.length() == 5) {
                 // log in as fahim 1
             } else if (id.length() == 6) {
                 // login fahim2
             }
             if (id.length() == 7) {
->>>>>>> 7ad00d9a37c11b3fde7cd00500624dffad65ff18
+
                 // log in as ornob1
             } else if (id.length() == 8) {
                 // login as a ornob2
             }
-<<<<<<< HEAD
+
             else if (id.length() == 9) {
-=======
+
             if (id.length() == 9) {
->>>>>>> 7ad00d9a37c11b3fde7cd00500624dffad65ff18
+
             } else if (id.length() == 10) {
                 // login as a tuhin 2
             } else {
                 erroralert.setTitle("user id error");
-<<<<<<< HEAD
-                erroralert.setContentText("user id do not exits");
-=======
+
+ 
                 erroralert.setTitle("user id do not exits");
->>>>>>> 7ad00d9a37c11b3fde7cd00500624dffad65ff18
+
                 erroralert.showAndWait();
             }
         }
