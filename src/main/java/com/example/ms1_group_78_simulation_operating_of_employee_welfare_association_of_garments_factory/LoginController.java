@@ -26,150 +26,98 @@ public class LoginController {
 
     @javafx.fxml.FXML
     public void initialize() {
-        Eventmanager eventmanager = new Eventmanager("Event manager", "01254451", "event@gmail.com", "bashundhara", "1111", LocalDate.of(1990, 4, 4));
+        Eventmanager eventmanager = new Eventmanager(
+                "Event manager", "01254451", "event@gmail.com", "bashundhara", "1111",
+                LocalDate.of(1990, 4, 4)
+        );
         eventmanagerObservableList.add(eventmanager);
     }
 
     @javafx.fxml.FXML
     public void signupButtonOA(ActionEvent actionEvent) {
+        // TODO: Implement sign-up logic
     }
 
     @javafx.fxml.FXML
     public void forgetpassworfButtonOA(ActionEvent actionEvent) {
-
+        // TODO: Implement forgot-password logic
     }
 
     @javafx.fxml.FXML
     public void loginButtonOA(ActionEvent actionEvent) throws IOException {
-        String id, password;
+        String id = loginUseridTF.getText();
+        String password = loginPasswordTF.getText();
         boolean flag = true;
 
         Alert erroralert = new Alert(Alert.AlertType.ERROR);
 
-        id = loginUseridTF.getText();
-        password = loginPasswordTF.getText();
-
         if (id.isBlank()) {
             flag = false;
-            erroralert.setTitle("user id errod");
-            erroralert.setContentText("User id can not be blank");
+            erroralert.setTitle("User ID Error");
+            erroralert.setContentText("User ID cannot be blank");
             erroralert.showAndWait();
         }
         if (password.isBlank()) {
             flag = false;
-            erroralert.setTitle("password id error");
-            erroralert.setContentText("password can not be blank");
+            erroralert.setTitle("Password Error");
+            erroralert.setContentText("Password cannot be blank");
             erroralert.showAndWait();
         }
-        if (flag) {
-            if (id.length() == 3) {
-                // log in as a member
-            } else if (id.length() == 4) {
-                //login as an event manager
+
+        if (!flag) return;
+
+        switch (id.length()) {
+            case 3:
+                // Log in as a member
+                break;
+
+            case 4:
+                // Login as an event manager
                 for (Eventmanager eventmanager : eventmanagerObservableList) {
                     if (eventmanager.login(id, password) != null) {
-                        Parent root = null;
-                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Event_manager/eventdashboard.fxml"));
-                        root = fxmlLoader.load();
-                        EventdashboardController eventdashboardController = fxmlLoader.getController();
-                        eventdashboardController.setter(eventmanager);
-                        Scene scene = new Scene(root);
+                        FXMLLoader fxmlLoader = new FXMLLoader(
+                                HelloApplication.class.getResource("Event_manager/eventdashboard.fxml")
+                        );
+                        Parent root = fxmlLoader.load();
+                        EventdashboardController controller = fxmlLoader.getController();
+                        controller.setter(eventmanager);
                         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-                        stage.setScene(scene);
-                        stage.setTitle("Admin Dashboard");
+                        stage.setScene(new Scene(root));
+                        stage.setTitle("Event Manager Dashboard");
                         stage.show();
-                        break;
+                        return;
                     }
                 }
-            } else if (id.length() == 5) {
-                // log in as fahim 1
-            } else if (id.length() == 6) {
-                // login fahim2
-<<<<<<< HEAD
-            } else if (id.length() == 7) {
-=======
-            }
+                break;
 
-            else if (id.length() == 7) {
+            case 5:
+                // Log in as Fahim 1
+                break;
 
->>>>>>> ee92e24d5c4241691a0c5ec56e3dee661eb0335f
-                if (id.length() == 5) {
-                    // log in as fahim 1
-                } else if (id.length() == 6) {
-                    // login fahim2
-                }
-                if (id.length() == 7) {
-<<<<<<< HEAD
-                    // log in as ornob1
-                } else if (id.length() == 8) {
-                    // login as a ornob2
-                } else if (id.length() == 9) {
-                    if (id.length() == 9) {
-                        // log in as tuhin 1
-=======
+            case 6:
+                // Log in as Fahim 2
+                break;
 
-                    // log in as ornob1
-                } else if (id.length() == 8) {
-                    // login as a ornob2
-                }
+            case 7:
+                // Log in as Ornob 1
+                break;
 
-                else if (id.length() == 9) {
+            case 8:
+                // Log in as Ornob 2
+                break;
 
-                    if (id.length() == 9) {
+            case 9:
+                // Log in as Tuhin 1
+                break;
 
->>>>>>> ee92e24d5c4241691a0c5ec56e3dee661eb0335f
-                    } else if (id.length() == 10) {
-                        // login as a tuhin 2
-                    } else {
-                        erroralert.setTitle("user id error");
-<<<<<<< HEAD
-                        erroralert.setTitle("user id do not exits");
-                        erroralert.showAndWait();
-                    }
-                }
-            }
+            case 10:
+                // Log in as Tuhin 2
+                break;
+
+            default:
+                erroralert.setTitle("User ID Error");
+                erroralert.setContentText("User ID does not exist");
+                erroralert.showAndWait();
         }
     }
-} // <-- Added missing closing brace for the class
-=======
-
-
-                        erroralert.setTitle("user id do not exits");
-
-                        erroralert.showAndWait();
-                    }
-                }
-
-            }
-        }
-
-//        if(id.length() == 3 ){
-//            // log in as a member
-//        }
-//        else if(id.length()== 4){
-//            // login as a president
-//        }
-//        else {
-//            erroralert.setTitle("user id error");
-//            erroralert.setTitle("user id do not exits");
-//            erroralert.showAndWait();
-//        }
-//        /*if (flag) {
-//            if (id.length() == 4) {
-//                //login as an event manager
-//
-//                for (Eventmanager eventmanager : eventmanagerObservableList){
-//                    if (eventmanager.login(id,password) != null){
-//                        Parent root = null;
-//                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Event_manager/eventdashboard.fxml"));
-//                        root = fxmlLoader.load();
-//                        EventdashboardController eventdashboardController = fxmlLoader.getController();
-//                        eventdashboardController.setter(eventmanager);
-//                        Scene scene = new Scene(root);
-//                        Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-//                        stage.setScene(scene);
-//                        stage.setTitle("Admin Dashboard");
-//                        stage.show();
-//                    }
-//                }
->>>>>>> ee92e24d5c4241691a0c5ec56e3dee661eb0335f
+}
