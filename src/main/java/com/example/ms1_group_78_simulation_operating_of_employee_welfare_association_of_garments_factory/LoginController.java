@@ -22,7 +22,6 @@ public class LoginController {
     @javafx.fxml.FXML
     private TextField loginPasswordTF;
 
-
     ObservableList<Eventmanager> eventmanagerObservableList = FXCollections.observableArrayList();
 
     @javafx.fxml.FXML
@@ -34,11 +33,11 @@ public class LoginController {
     @javafx.fxml.FXML
     public void signupButtonOA(ActionEvent actionEvent) {
     }
+
     @javafx.fxml.FXML
     public void forgetpassworfButtonOA(ActionEvent actionEvent) {
 
     }
-
 
     @javafx.fxml.FXML
     public void loginButtonOA(ActionEvent actionEvent) throws IOException {
@@ -55,8 +54,6 @@ public class LoginController {
             erroralert.setTitle("user id errod");
             erroralert.setContentText("User id can not be blank");
             erroralert.showAndWait();
-
-
         }
         if (password.isBlank()) {
             flag = false;
@@ -69,7 +66,6 @@ public class LoginController {
                 // log in as a member
             } else if (id.length() == 4) {
                 //login as an event manager
-
                 for (Eventmanager eventmanager : eventmanagerObservableList) {
                     if (eventmanager.login(id, password) != null) {
                         Parent root = null;
@@ -89,71 +85,28 @@ public class LoginController {
                 // log in as fahim 1
             } else if (id.length() == 6) {
                 // login fahim2
-            }
-
-            else if (id.length() == 7) {
-
-            if (id.length() == 5) {
-                // log in as fahim 1
-            } else if (id.length() == 6) {
-                // login fahim2
-            }
-            if (id.length() == 7) {
-
-                // log in as ornob1
-            } else if (id.length() == 8) {
-                // login as a ornob2
-            }
-
-            else if (id.length() == 9) {
-
-            if (id.length() == 9) {
-
-            } else if (id.length() == 10) {
-                // login as a tuhin 2
-            } else {
-                erroralert.setTitle("user id error");
-
- 
-                erroralert.setTitle("user id do not exits");
-
-                erroralert.showAndWait();
+            } else if (id.length() == 7) {
+                if (id.length() == 5) {
+                    // log in as fahim 1
+                } else if (id.length() == 6) {
+                    // login fahim2
+                }
+                if (id.length() == 7) {
+                    // log in as ornob1
+                } else if (id.length() == 8) {
+                    // login as a ornob2
+                } else if (id.length() == 9) {
+                    if (id.length() == 9) {
+                        // log in as tuhin 1
+                    } else if (id.length() == 10) {
+                        // login as a tuhin 2
+                    } else {
+                        erroralert.setTitle("user id error");
+                        erroralert.setTitle("user id do not exits");
+                        erroralert.showAndWait();
+                    }
+                }
             }
         }
-
     }
-}
-
-//        if(id.length() == 3 ){
-//            // log in as a member
-//        }
-//        else if(id.length()== 4){
-//            // login as a president
-//        }
-//        else {
-//            erroralert.setTitle("user id error");
-//            erroralert.setTitle("user id do not exits");
-//            erroralert.showAndWait();
-//        }
-//        /*if (flag) {
-//            if (id.length() == 4) {
-//                //login as an event manager
-//
-//                for (Eventmanager eventmanager : eventmanagerObservableList){
-//                    if (eventmanager.login(id,password) != null){
-//                        Parent root = null;
-//                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Event_manager/eventdashboard.fxml"));
-//                        root = fxmlLoader.load();
-//                        EventdashboardController eventdashboardController = fxmlLoader.getController();
-//                        eventdashboardController.setter(eventmanager);
-//                        Scene scene = new Scene(root);
-//                        Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
-//                        stage.setScene(scene);
-//                        stage.setTitle("Admin Dashboard");
-//                        stage.show();
-//                    }
-//                }
-
-
-
-
+} // <-- Added missing closing brace for the class
