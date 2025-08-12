@@ -16,19 +16,18 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.time.LocalDate;
 
-public class LoginController
-{
+public class LoginController {
     @javafx.fxml.FXML
     private TextField loginUseridTF;
     @javafx.fxml.FXML
     private TextField loginPasswordTF;
 
 
-
     ObservableList<Eventmanager> eventmanagerObservableList = FXCollections.observableArrayList();
+
     @javafx.fxml.FXML
     public void initialize() {
-        Eventmanager eventmanager = new Eventmanager("Event manager","01254451","event@gmail.com","bashundhara","1111",LocalDate.of(1990,4,4));
+        Eventmanager eventmanager = new Eventmanager("Event manager", "01254451", "event@gmail.com", "bashundhara", "1111", LocalDate.of(1990, 4, 4));
         eventmanagerObservableList.add(eventmanager);
     }
 
@@ -49,7 +48,7 @@ public class LoginController
         if (id.isBlank()) {
             flag = false;
             erroralert.setTitle("user id errod");
-            erroralert.setTitle("User id can not be blank");
+            erroralert.setContentText("User id can not be blank");
             erroralert.showAndWait();
 
 
@@ -57,14 +56,13 @@ public class LoginController
         if (password.isBlank()) {
             flag = false;
             erroralert.setTitle("password id error");
-            erroralert.setTitle("password can not be blank");
+            erroralert.setContentText("password can not be blank");
             erroralert.showAndWait();
         }
         if (flag) {
             if (id.length() == 3) {
                 // log in as a member
-            }
-            else if (id.length() == 4) {
+            } else if (id.length() == 4) {
                 //login as an event manager
 
                 for (Eventmanager eventmanager : eventmanagerObservableList) {
@@ -79,30 +77,31 @@ public class LoginController
                         stage.setScene(scene);
                         stage.setTitle("Admin Dashboard");
                         stage.show();
+                        break;
                     }
                 }
+            } else if (id.length() == 5) {
+                // log in as fahim 1
+            } else if (id.length() == 6) {
+                // login fahim2
             }
-                if (id.length() == 5) {
-                    // log in as fahim 1
-                } else if (id.length() == 6) {
-                    // login fahim2
-                }
-                if (id.length() == 7) {
-                    // log in as ornob1
-                } else if (id.length() == 8) {
-                    // login as a ornob2
-                }
-                if (id.length() == 9) {
-                } else if (id.length() == 10) {
-                    // login as a tuhin 2
-                } else {
-                    erroralert.setTitle("user id error");
-                    erroralert.setTitle("user id do not exits");
-                    erroralert.showAndWait();
-                }
+            else if (id.length() == 7) {
+                // log in as ornob1
+            } else if (id.length() == 8) {
+                // login as a ornob2
+            }
+            else if (id.length() == 9) {
+            } else if (id.length() == 10) {
+                // login as a tuhin 2
+            } else {
+                erroralert.setTitle("user id error");
+                erroralert.setContentText("user id do not exits");
+                erroralert.showAndWait();
             }
         }
+
     }
+}
 
 //        if(id.length() == 3 ){
 //            // log in as a member
