@@ -90,24 +90,49 @@ public class LoginController {
             } else if (id.length() == 6) {
                 // login fahim2
             }
+<<<<<<< HEAD
             else if (id.length() == 7) {
+=======
+
+            else if (id.length() == 7) {
+
+>>>>>>> 004f4e023e8acc4a7cd1030bdfb70f966f4f6b44
             if (id.length() == 5) {
                 // log in as fahim 1
             } else if (id.length() == 6) {
                 // login fahim2
             }
             if (id.length() == 7) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 004f4e023e8acc4a7cd1030bdfb70f966f4f6b44
                 // log in as ornob1
             } else if (id.length() == 8) {
                 // login as a ornob2
             }
+<<<<<<< HEAD
             else if (id.length() == 9) {
             else if (id.length() == 9) {
+=======
+
+            else if (id.length() == 9) {
+
+            if (id.length() == 9) {
+
+>>>>>>> 004f4e023e8acc4a7cd1030bdfb70f966f4f6b44
             } else if (id.length() == 10) {
                 // login as a tuhin 2
             } else {
                 erroralert.setTitle("user id error");
+<<<<<<< HEAD
                 erroralert.setContentText("user id do not exits");
+=======
+
+ 
+                erroralert.setTitle("user id do not exits");
+
+>>>>>>> 004f4e023e8acc4a7cd1030bdfb70f966f4f6b44
                 erroralert.showAndWait();
             }
         }
