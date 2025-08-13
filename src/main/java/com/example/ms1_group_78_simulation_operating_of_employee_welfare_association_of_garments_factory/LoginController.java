@@ -34,6 +34,7 @@ public class LoginController {
     @javafx.fxml.FXML
     public void signupButtonOA(ActionEvent actionEvent) {
     }
+
     @javafx.fxml.FXML
     public void forgetpassworfButtonOA(ActionEvent actionEvent) {
 
@@ -89,9 +90,7 @@ public class LoginController {
                 // log in as fahim 1
             } else if (id.length() == 6) {
                 // login fahim2
-            }
-
-            else if (id.length() == 7) {
+            } else if (id.length() == 7) {
 
                 if (id.length() == 5) {
                     // log in as fahim 1
@@ -103,9 +102,7 @@ public class LoginController {
                     // log in as ornob1
                 } else if (id.length() == 8) {
                     // login as a ornob2
-                }
-
-                else if (id.length() == 9) {
+                } else if (id.length() == 9) {
 
                     if (id.length() == 9) {
 
@@ -123,6 +120,8 @@ public class LoginController {
 
             }
         }
+    }
+}
 
 //        if(id.length() == 3 ){
 //            // log in as a member
