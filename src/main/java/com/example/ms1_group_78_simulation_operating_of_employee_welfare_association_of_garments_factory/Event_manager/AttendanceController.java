@@ -37,6 +37,7 @@ public class AttendanceController
                 break;
             }
         }
-
+        choseeventCB.setValue(null);
+        attendeesTF.clear();
     }
 }

@@ -35,6 +35,7 @@ public class AttendanceController
                 p.setAttendance(attendance_count);
                 break;
             }
+
         }
 
     }
