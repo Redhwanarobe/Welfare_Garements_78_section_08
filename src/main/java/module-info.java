@@ -15,7 +15,19 @@ module com.example.ms1_group_78_simulation_operating_of_employee_welfare_associa
 
     opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Event_manager to javafx.fxml, javafx.base;
     opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Training_coordinator to javafx.fxml, javafx.base;
-    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer to javafx.fxml, javafx.base;
-    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer to javafx.fxml, javafx.base;
+
+
+    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer to javafx.fxml,  javafx.graphics, javafx.base;
+    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models to javafx.fxml, javafx.base;
+    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Controllers to javafx.fxml, javafx.base;
+    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility to javafx.base, javafx.fxml, javafx.graphics;
+    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer to javafx.fxml, javafx.graphics, javafx.base;
+    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Models to javafx.fxml, javafx.base;
+    opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Controllers to javafx.fxml, javafx.base;
+
+
     exports com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory;
+    exports com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer;
+    exports com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models;
+    exports com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility;
 }

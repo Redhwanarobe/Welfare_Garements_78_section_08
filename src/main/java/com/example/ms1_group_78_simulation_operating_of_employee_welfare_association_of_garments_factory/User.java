@@ -1,53 +1,45 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory;
 
-import java.time.LocalDate;
-import java.util.Objects;
+import java.io.Serializable;
 
-public abstract class  User {
-    private String id,name,phoneNo,email,address,password;
-    private LocalDate dob ,doj;
 
-    public User(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
+public class User implements Serializable {
+    private String userName, userID, phnNumber, address, password, gender, userRole, dob;
 
-        this.name = name;
-        this.phoneNo = phoneNo;
-        this.email = email;
+
+    public User(String userName, String userID, String phnNumber, String address, String password, String gender, String userRole, String dob) {
+        this.userName = userName;
+        this.userID = userID;
+        this.phnNumber = phnNumber;
         this.address = address;
         this.password = password;
+        this.gender = gender;
+        this.userRole = userRole;
         this.dob = dob;
-        this.doj= LocalDate.now();
     }
 
-    public String getId() {
-        return id;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getName() {
-        return name;
+    public String getUserID() {
+        return userID;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 
-    public String getPhoneNo() {
-        return phoneNo;
+    public String getPhnNumber() {
+        return phnNumber;
     }
 
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPhnNumber(String phnNumber) {
+        this.phnNumber = phnNumber;
     }
 
     public String getAddress() {
@@ -66,25 +58,41 @@ public abstract class  User {
         this.password = password;
     }
 
-    public LocalDate getDob() {
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(LocalDate dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
     @Override
     public String toString() {
-        return
-                "Id= " + id + '\n' +
-                "Name= " + name + '\n' +
-                "PhoneNo= " + phoneNo + '\n' +
-                "Email= " + email + '\n' +
-                "Address= " + address + '\n' +
-                "Password= " + password + '\n' +
-                "Date of birth= " + dob ;
+        return "User{" +
+                "userName='" + userName + '\'' +
+                ", userID='" + userID + '\'' +
+                ", phnNumber='" + phnNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", password='" + password + '\'' +
+                ", gender='" + gender + '\'' +
+                ", userRole='" + userRole + '\'' +
+                ", dob=" + dob +
+                '}';
     }
-    public abstract String generateID();
-    public abstract User login(String id, String password);
 }
