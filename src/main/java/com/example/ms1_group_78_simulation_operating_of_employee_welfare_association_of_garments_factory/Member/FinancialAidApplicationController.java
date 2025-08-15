@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
 public class FinancialAidApplicationController
 {
     @javafx.fxml.FXML
-    private ComboBox memberCombox;
+    private ComboBox<String> memberCombox;
     @javafx.fxml.FXML
     private TextField nameTF;
     @javafx.fxml.FXML
