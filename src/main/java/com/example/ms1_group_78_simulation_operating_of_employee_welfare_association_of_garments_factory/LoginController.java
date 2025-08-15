@@ -35,8 +35,13 @@ public class LoginController {
     }
 
     @FXML
-    public void signupButtonOA(ActionEvent actionEvent) {
-        // TODO: Implement sign-up logic
+    public void signupButtonOA(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("WelfareOfficer/CreateAccount.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Member Dashboard");
+        stage.show();
     }
 
     @FXML
