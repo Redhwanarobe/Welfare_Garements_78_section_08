@@ -1,11 +1,13 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Controllers;
 
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.Employee;
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.AlertHelper;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.AppendableObjectOutputStream;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.ArrayLists;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.User;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Models.FeedbackModel;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 
@@ -44,10 +46,14 @@ public class FeedBackViewController
 
     @javafx.fxml.FXML
     public void sendButton(ActionEvent actionEvent) throws IOException{
+        ArrayLists.feedbackModelArrayList.clear();
         String feedback = answerField.getText();
         String id = memberComboBox.getValue();
         String name = memberComboBox.getValue();
 
+        if (feedback == null){
+            AlertHelper.showAlert("Error","Please Give a feedback", Alert.AlertType.ERROR);
+        }
         FeedbackModel feedbacks = new FeedbackModel(name, id, feedback);
 
         File file = new File("data/feedBack.bin");
@@ -65,7 +71,8 @@ public class FeedBackViewController
         oos.writeObject(feedbacks);
         oos.close();
         ArrayLists.feedbackModelArrayList.add(feedbacks);
-
-
+        AlertHelper.showAlert("Successful", "Feedback given successfully!", Alert.AlertType.INFORMATION);
+        memberComboBox.getSelectionModel().clearSelection();
+        answerField.clear();
     }
 }
