@@ -82,7 +82,11 @@ public class LoginController {
                 stage.show();
 
 
+<<<<<<< HEAD
             }
+=======
+        }
+>>>>>>> fa9fbe5033ab958c168f66aec5e3e60910a056e6
             else if (id.length() == 9){
                 FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("President_UnionLeader/presidentDashboard.fxml"));
                 Scene scene = new Scene(fxmlLoader.load());
@@ -102,7 +106,11 @@ public class LoginController {
 
     } }
 
+<<<<<<< HEAD
 //        if(id.length() == 3 ){
+=======
+    //        if(id.length() == 3 ){
+>>>>>>> fa9fbe5033ab958c168f66aec5e3e60910a056e6
 //            // log in as a member
 //        }
 //        else if(id.length()== 4){

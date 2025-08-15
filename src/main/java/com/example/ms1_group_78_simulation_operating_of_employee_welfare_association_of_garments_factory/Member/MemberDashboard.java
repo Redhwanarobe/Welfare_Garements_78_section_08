@@ -17,14 +17,19 @@ public class MemberDashboard extends User {
         this.emergencyContact = emergencyContact;
     }
 
+    public MemberDashboard(String memberDahsboard, String number, String mail, String uttara, String number1, LocalDate of) {
+        super();
+    }
+
+
     @Override
     public String toString() {
         return
                 super.toString() + '\n'+
-                "EmergencyContact='" + emergencyContact + '\n' +
-                "Status=" + status
+                        "EmergencyContact='" + emergencyContact + '\n' +
+                        "Status=" + status
 
-                 ;
+                ;
     }
 
     public int getStatus() {
@@ -48,12 +53,9 @@ public class MemberDashboard extends User {
         String id = "";
         Random random = new Random();
         id = Integer.toString(random.nextInt(1000000, 9999999)) ;
-        return "";
+        return id;
     }
 
-    @Override
-    public User login(String id, String password) {
-        return null;
-    }
+
 
 }

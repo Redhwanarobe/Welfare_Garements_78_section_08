@@ -1,45 +1,53 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory;
 
-import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.Objects;
 
+public abstract class  User {
+    private String id,name,phoneNo,email,address,password;
+    private LocalDate dob ,doj;
 
-public class User implements Serializable {
-    private String userName, userID, phnNumber, address, password, gender, userRole, dob;
+    public User(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
 
-
-    public User(String userName, String userID, String phnNumber, String address, String password, String gender, String userRole, String dob) {
-        this.userName = userName;
-        this.userID = userID;
-        this.phnNumber = phnNumber;
+        this.name = name;
+        this.phoneNo = phoneNo;
+        this.email = email;
         this.address = address;
         this.password = password;
-        this.gender = gender;
-        this.userRole = userRole;
         this.dob = dob;
+        this.doj= LocalDate.now();
     }
 
-    public String getUserName() {
-        return userName;
+    public String getId() {
+        return id;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getUserID() {
-        return userID;
+    public String getName() {
+        return name;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPhnNumber() {
-        return phnNumber;
+    public String getPhoneNo() {
+        return phoneNo;
     }
 
-    public void setPhnNumber(String phnNumber) {
-        this.phnNumber = phnNumber;
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getAddress() {
@@ -58,41 +66,25 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getUserRole() {
-        return userRole;
-    }
-
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
-    }
-
-    public String getDob() {
+    public LocalDate getDob() {
         return dob;
     }
 
-    public void setDob(String dob) {
+    public void setDob(LocalDate dob) {
         this.dob = dob;
     }
 
     @Override
     public String toString() {
-        return "User{" +
-                "userName='" + userName + '\'' +
-                ", userID='" + userID + '\'' +
-                ", phnNumber='" + phnNumber + '\'' +
-                ", address='" + address + '\'' +
-                ", password='" + password + '\'' +
-                ", gender='" + gender + '\'' +
-                ", userRole='" + userRole + '\'' +
-                ", dob=" + dob +
-                '}';
+        return
+                "Id= " + id + '\n' +
+                "Name= " + name + '\n' +
+                "PhoneNo= " + phoneNo + '\n' +
+                "Email= " + email + '\n' +
+                "Address= " + address + '\n' +
+                "Password= " + password + '\n' +
+                "Date of birth= " + dob ;
     }
+    public abstract String generateID();
+    public abstract User login(String id, String password);
 }

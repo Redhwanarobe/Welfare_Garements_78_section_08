@@ -15,9 +15,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President_UnionLeader.PresidentDashboardController">
+<BorderPane fx:id="boderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President_UnionLeader.PresidentDashboardController">
    <left>
-      <VBox prefHeight="575.0" prefWidth="203.0" style="-fx-background-color: DCCFC0;" BorderPane.alignment="CENTER">
+      <VBox fx:id="vbox" prefHeight="575.0" prefWidth="203.0" style="-fx-background-color: DCCFC0;" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#President_see_meberProfileOA" prefHeight="32.0" prefWidth="208.0" text="ALL Member Profiles" />
             <Button mnemonicParsing="false" onAction="#presidentReviewmemberComplainOA" prefHeight="32.0" prefWidth="208.0" text="FeedbackMember" />
@@ -27,11 +27,12 @@
             <Button mnemonicParsing="false" onAction="#presidentReviewOA" prefHeight="32.0" prefWidth="208.0" text="MemberComplain" />
             <Button mnemonicParsing="false" onAction="#presidentDownloadOA" prefHeight="32.0" prefWidth="208.0" text="Download Feedback" />
             <Button mnemonicParsing="false" onAction="#presidentSendAnnoucemntOA" prefHeight="32.0" prefWidth="208.0" text="Send Announcements" />
+            <Button mnemonicParsing="false" onAction="#sinoutbuttonOA" prefHeight="32.0" prefWidth="208.0" text="SignOut" />
          </children>
       </VBox>
    </left>
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+      <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="700.0" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="204.0" layoutY="22.0" prefHeight="48.0" prefWidth="332.0" text="President Dashboard">
                <font>
@@ -48,7 +49,7 @@
             <Label layoutX="544.0" layoutY="289.0" prefHeight="25.0" prefWidth="87.0" text="Date of joining" />
             <Label layoutX="544.0" layoutY="224.0" prefHeight="25.0" prefWidth="87.0" text="Gender" />
             <Label layoutX="544.0" layoutY="164.0" prefHeight="25.0" prefWidth="87.0" text="Blood Group" />
-            <TextField layoutX="108.0" layoutY="132.0" />
+            <TextField fx:id="fullname" layoutX="108.0" layoutY="132.0" />
             <TextField layoutX="108.0" layoutY="276.0" />
             <TextField layoutX="108.0" layoutY="195.0" />
             <TextField layoutX="544.0" layoutY="132.0" />
