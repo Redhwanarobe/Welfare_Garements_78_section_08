@@ -16,6 +16,11 @@ public abstract class  User {
         this.password = password;
         this.dob = dob;
         this.doj= LocalDate.now();
+        this.id = this.generateID();
+    }
+
+    public User() {
+
     }
 
     public String getId() {
@@ -86,5 +91,15 @@ public abstract class  User {
                 "Date of birth= " + dob ;
     }
     public abstract String generateID();
-    public abstract User login(String id, String password);
+    public boolean login (String id,String password){
+        if (id == this.getId() && password == this.getPassword()){
+            return true;
+        }
+
+        return false;
+    }
+
+    public boolean Login(String id, String password) {
+        return false ;
+    }
 }
