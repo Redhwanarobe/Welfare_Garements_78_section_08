@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.budgetLimitViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Controllers.budgetLimitViewController">
    <children>
-      <Label layoutX="-2.0" prefHeight="50.0" prefWidth="722.0" style="-fx-background-color: black;" text="   Budget Limit" textAlignment="CENTER" textFill="WHITE">
+      <Label layoutX="-2.0" prefHeight="50.0" prefWidth="650.0" style="-fx-background-color: black;" text="   Budget Limit" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Pristina" size="25.0" />
          </font>
@@ -19,14 +19,19 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="95.0" layoutY="163.0" prefHeight="50.0" prefWidth="514.0" />
+      <TextField fx:id="limitAmountField" layoutX="95.0" layoutY="163.0" prefHeight="50.0" prefWidth="382.0" style="-fx-border-radius: 5px; -fx-background-radius: 5px; -fx-border-color: #77BEF0;" />
       <Label layoutX="95.0" layoutY="240.0" prefHeight="30.0" prefWidth="122.0" text="Category">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="95.0" layoutY="282.0" prefHeight="50.0" prefWidth="514.0" />
-      <Button layoutX="259.0" layoutY="421.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0" style="-fx-background-color: black;" text="Set Limit" textFill="WHITE">
+      <ComboBox fx:id="limitCategoryComboBox" layoutX="95.0" layoutY="282.0" prefHeight="50.0" prefWidth="226.0" promptText="Select a Category" style="-fx-border-color: #77BEF0; -fx-background-radius: 5px; -fx-border-radius: 5px;" />
+      <Button layoutX="95.0" layoutY="372.0" mnemonicParsing="false" onAction="#setLimitButton" prefHeight="61.0" prefWidth="186.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Set Limit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="384.0" layoutY="372.0" mnemonicParsing="false" onAction="#RemoveLimitButton" prefHeight="61.0" prefWidth="186.0" style="-fx-background-color: black; -fx-background-radius: 10px;" text="Remove Limit" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

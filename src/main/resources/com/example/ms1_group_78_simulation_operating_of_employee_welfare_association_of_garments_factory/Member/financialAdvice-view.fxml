@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.FinancialAdviceViewController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.FinancialAdviceController">
    <children>
-      <TableView layoutX="43.0" layoutY="229.0" prefHeight="148.0" prefWidth="799.0">
+      <TableView fx:id="tablefiniacial" layoutX="43.0" layoutY="229.0" prefHeight="148.0" prefWidth="799.0">
          <columns>
             <TableColumn fx:id="table_M_adviceIDcol_1" prefWidth="110.0" text="Advice Id" />
             <TableColumn fx:id="table_M_tittlecol_2" prefWidth="94.0" text="Title " />

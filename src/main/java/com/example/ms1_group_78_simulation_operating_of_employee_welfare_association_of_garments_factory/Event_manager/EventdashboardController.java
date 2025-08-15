@@ -3,10 +3,14 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -20,6 +24,8 @@ public class EventdashboardController
     private VBox vbox;
     @javafx.fxml.FXML
     private BorderPane bordarphane;
+
+
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -75,6 +81,15 @@ public class EventdashboardController
     }
 
     @javafx.fxml.FXML
-    public void signoutButtonOa(ActionEvent actionEvent) {
+    public void signoutButtonOa(ActionEvent actionEvent) throws IOException {
+        Parent root = null;
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Login.fxml"));
+        root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Login");
+        stage.show();
     }
+
 }

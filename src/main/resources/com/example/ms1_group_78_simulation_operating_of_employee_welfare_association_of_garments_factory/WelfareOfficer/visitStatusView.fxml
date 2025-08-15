@@ -8,39 +8,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="612.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.VisitStatusViewController">
+<AnchorPane prefHeight="612.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Controllers.VisitStatusViewController">
    <children>
       <Label alignment="CENTER" layoutY="-4.0" prefHeight="54.0" prefWidth="602.0" style="-fx-background-color: black;" text="Visit Status" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="25.0" />
          </font>
       </Label>
-      <TableView layoutX="69.0" layoutY="89.0" prefHeight="200.0" prefWidth="453.0">
+      <TableView fx:id="statusTableView" layoutX="74.0" layoutY="280.0" prefHeight="200.0" prefWidth="453.0">
         <columns>
-          <TableColumn prefWidth="104.00006866455078" text="Member ID" />
-          <TableColumn prefWidth="188.0" text="Member Name" />
-            <TableColumn prefWidth="160.79995727539062" text="Member Visit Status" />
+          <TableColumn fx:id="idCol" prefWidth="131.20001983642578" text="Member ID" />
+            <TableColumn fx:id="nameCol" prefWidth="172.0" text="Member Name" />
+          <TableColumn fx:id="visitCol" prefWidth="150.39999389648438" text="Member Visit Status" />
         </columns>
       </TableView>
-      <Button layoutX="226.0" layoutY="317.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: black;" text="Get Visit Status" textFill="WHITE">
+      <Button layoutX="232.0" layoutY="505.0" mnemonicParsing="false" onAction="#visitStatus" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: black;" text="Get Visit Status" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <ComboBox layoutX="69.0" layoutY="444.0" prefHeight="41.0" prefWidth="174.0" />
-      <Label layoutX="69.0" layoutY="411.0" prefHeight="20.0" prefWidth="138.0" text="Select a Member">
+      <ComboBox fx:id="memberComboBOX" layoutX="65.0" layoutY="121.0" prefHeight="41.0" prefWidth="174.0" />
+      <Label layoutX="65.0" layoutY="88.0" prefHeight="20.0" prefWidth="138.0" text="Select a Member">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="364.0" layoutY="444.0" prefHeight="41.0" prefWidth="174.0" />
-      <Label layoutX="364.0" layoutY="411.0" prefHeight="20.0" prefWidth="138.0" text="Visit Status">
+      <ComboBox fx:id="statusComboBOX" layoutX="360.0" layoutY="121.0" prefHeight="41.0" prefWidth="174.0" />
+      <Label layoutX="360.0" layoutY="88.0" prefHeight="20.0" prefWidth="138.0" text="Visit Status">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="218.0" layoutY="513.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="166.0" style="-fx-background-color: black;" text="Update Visit Status" textFill="WHITE">
+      <Button layoutX="217.0" layoutY="182.0" mnemonicParsing="false" onAction="#updateStatus" prefHeight="54.0" prefWidth="166.0" style="-fx-background-color: black;" text="Update Visit Status" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="730.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.VisitViewController">
+<AnchorPane prefHeight="730.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Controllers.VisitViewController">
    <children>
-      <ComboBox layoutX="82.0" layoutY="129.0" prefHeight="36.0" prefWidth="204.0" />
+      <ComboBox fx:id="memberCOMBOBOX" layoutX="82.0" layoutY="129.0" prefHeight="36.0" prefWidth="204.0" />
       <Label alignment="CENTER" layoutY="-1.0" prefHeight="53.0" prefWidth="735.0" style="-fx-background-color: black;" text="Visit Member" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="25.0" />
@@ -22,13 +21,13 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="82.0" layoutY="209.0" prefHeight="36.0" prefWidth="204.0" />
+      <ComboBox fx:id="typeComboBox" layoutX="82.0" layoutY="209.0" prefHeight="36.0" prefWidth="204.0" />
       <Label layoutX="82.0" layoutY="180.0" text="Visit Type">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <DatePicker layoutX="433.0" layoutY="129.0" prefHeight="36.0" prefWidth="204.0" />
+      <DatePicker fx:id="dob" layoutX="433.0" layoutY="129.0" prefHeight="36.0" prefWidth="204.0" />
       <Label layoutX="433.0" layoutY="94.0" text="Appointment Date">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -39,14 +38,14 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextArea layoutX="82.0" layoutY="294.0" prefHeight="138.0" prefWidth="566.0" />
+      <TextArea fx:id="purposeField" layoutX="82.0" layoutY="294.0" prefHeight="138.0" prefWidth="566.0" />
       <Label layoutX="82.0" layoutY="452.0" text="Notes">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextArea layoutX="82.0" layoutY="478.0" prefHeight="138.0" prefWidth="566.0" />
-      <Button layoutX="280.0" layoutY="643.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="175.0" style="-fx-background-color: black;" text="Make Appointment" textFill="WHITE">
+      <TextArea fx:id="notesField" layoutX="82.0" layoutY="478.0" prefHeight="138.0" prefWidth="566.0" />
+      <Button layoutX="280.0" layoutY="643.0" mnemonicParsing="false" onAction="#appointmentButton" prefHeight="47.0" prefWidth="175.0" style="-fx-background-color: black;" text="Make Appointment" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

@@ -1,5 +1,7 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Event_manager;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -23,8 +25,18 @@ public class EventlistController
 
     Events events;
 
+    ObservableList<Events> eventsObservableList = FXCollections.observableArrayList();
+    @javafx.fxml.FXML
+    private TableColumn<Events, Integer> attendanceTC;
+
     @javafx.fxml.FXML
     public void initialize() {
+        eventtitleTC.setCellValueFactory(new PropertyValueFactory<>("title"));
+        locationTC.setCellValueFactory(new PropertyValueFactory<>("location"));
+        timeTC.setCellValueFactory(new PropertyValueFactory<>("time"));
+        dateTC.setCellValueFactory(new PropertyValueFactory<>("date"));
+        attendanceTC.setCellValueFactory(new PropertyValueFactory<>("attendance"));
 
+        EventlisttableView.setItems(Event_details.getEventsObservableList());
     }
 }

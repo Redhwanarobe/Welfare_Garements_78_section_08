@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.President_UnionLeader.ExportFeedbackController">
+   <children>
+      <Button layoutX="27.0" layoutY="308.0" mnemonicParsing="false" onAction="#p_02downloadOA" prefHeight="30.0" prefWidth="91.0" text="Download " />
+      <TableView fx:id="tablep" layoutX="27.0" layoutY="83.0" prefHeight="148.0" prefWidth="799.0">
+         <columns>
+            <TableColumn fx:id="p_02_tablecol_01" prefWidth="110.0" text="Member Name" />
+            <TableColumn fx:id="p_02tablecol_2" prefWidth="94.0" text="Title " />
+            <TableColumn fx:id="p_02_tablecol3" prefWidth="185.0" text="Feedback" />
+            <TableColumn fx:id="p_02tablecol4" prefWidth="169.0" text="Date" />
+            <TableColumn fx:id="gender" prefWidth="169.0" text="Gender" />
+         </columns>
+      </TableView>
+      <Label layoutX="277.0" layoutY="26.0" prefHeight="17.0" prefWidth="228.0" text="FeedBackView">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

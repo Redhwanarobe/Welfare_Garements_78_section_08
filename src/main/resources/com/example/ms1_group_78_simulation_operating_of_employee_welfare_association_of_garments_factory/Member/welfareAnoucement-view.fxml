@@ -7,22 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.WelfareAnoucementViewController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.WelfareAnoucementController">
    <children>
-      <Button layoutX="50.0" layoutY="80.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Back" />
       <Label layoutX="264.0" layoutY="41.0" prefHeight="39.0" prefWidth="365.0" text="View and export file">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <TableView layoutX="33.0" layoutY="219.0" prefHeight="148.0" prefWidth="799.0">
+      <TableView fx:id="table" layoutX="33.0" layoutY="219.0" prefHeight="148.0" prefWidth="799.0">
          <columns>
-            <TableColumn prefWidth="110.0" text="Event Id" />
-            <TableColumn prefWidth="94.0" text="Event Title " />
-            <TableColumn prefWidth="185.0" text="Date " />
-            <TableColumn prefWidth="169.0" text="Location" />
+            <TableColumn fx:id="tableeventcol1" prefWidth="110.0" text="Event Id" />
+            <TableColumn fx:id="tabletitlecol2" prefWidth="94.0" text="Event Title " />
+            <TableColumn fx:id="tablecol3" prefWidth="185.0" text="Date " />
+            <TableColumn fx:id="tablelocationcol4" prefWidth="169.0" text="Location" />
          </columns>
       </TableView>
-      <Button layoutX="39.0" layoutY="420.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="138.0" text="Download text" />
+      <Button layoutX="39.0" layoutY="420.0" mnemonicParsing="false" onAction="#downloadtextOA" prefHeight="30.0" prefWidth="138.0" text="Download text" />
    </children>
 </AnchorPane>
