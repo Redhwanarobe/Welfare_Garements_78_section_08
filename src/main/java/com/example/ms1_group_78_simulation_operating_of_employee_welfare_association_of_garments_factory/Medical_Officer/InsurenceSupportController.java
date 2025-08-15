@@ -1,29 +1,26 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Medical_Officer;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 public class InsurenceSupportController
 {
     @javafx.fxml.FXML
-    private TableColumn MedicalReportCol;
+    private TableColumn<InsurenceSupportClass,String> MedicalReportCol;
     @javafx.fxml.FXML
-    private TableColumn idCol;
+    private TableColumn<InsurenceSupportClass,String> idCol;
     @javafx.fxml.FXML
-    private TableColumn AgeCol;
+    private TableColumn<InsurenceSupportClass,String> AgeCol;
     @javafx.fxml.FXML
-    private ComboBox insurenceTypeComboBox;
+    private ComboBox<String> insurenceTypeComboBox;
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TableColumn<InsurenceSupportClass,String> nameCol;
     @javafx.fxml.FXML
-    private TableColumn phoneNumberCol;
+    private TableColumn<InsurenceSupportClass,String> phoneNumberCol;
     @javafx.fxml.FXML
-    private TableColumn genderCol;
+    private TableColumn<InsurenceSupportClass,String> genderCol;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<InsurenceSupportClass> TableView;
     @javafx.fxml.FXML
     private TextArea RemarkTextArea;
 

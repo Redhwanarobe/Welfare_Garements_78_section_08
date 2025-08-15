@@ -1,10 +1,7 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Medical_Officer;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class MedicalOfficerController
 {
@@ -17,15 +14,15 @@ public class MedicalOfficerController
     @javafx.fxml.FXML
     private TextField topicTextField;
     @javafx.fxml.FXML
-    private TableColumn WeightCol;
+    private TableColumn<MedicalOfficerClass,String> WeightCol;
     @javafx.fxml.FXML
-    private TableColumn BpCol;
+    private TableColumn<MedicalOfficerClass,String> BpCol;
     @javafx.fxml.FXML
-    private TableColumn sugarCol;
+    private TableColumn<MedicalOfficerClass,String> sugarCol;
     @javafx.fxml.FXML
-    private TableColumn BloodGroupCol;
+    private TableColumn<MedicalOfficerClass,String> BloodGroupCol;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<MedicalOfficerClass> TableView;
 
     @javafx.fxml.FXML
     public void initialize() {

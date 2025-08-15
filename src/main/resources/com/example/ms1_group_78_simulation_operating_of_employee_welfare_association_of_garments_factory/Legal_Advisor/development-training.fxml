@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Legal_Advisor.DevelopmentTraining">
+<AnchorPane fx:id="successfullLabel" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Legal_Advisor.DevelopmentTrainingController">
    <children>
       <Button layoutX="56.0" layoutY="36.0" mnemonicParsing="false" onAction="#createOA" text="Create Module" />
       <Button layoutX="248.0" layoutY="215.0" mnemonicParsing="false" onAction="#SubmitOA" text="Submit" />
@@ -17,5 +17,6 @@
       <Label layoutX="90.0" layoutY="138.0" text="Topic" />
       <Label layoutX="370.0" layoutY="93.0" text="Objective" />
       <Label layoutX="90.0" layoutY="93.0" text="Title" />
+      <Label layoutX="313.0" layoutY="255.0" prefHeight="17.0" prefWidth="95.0" text="Label" />
    </children>
 </AnchorPane>

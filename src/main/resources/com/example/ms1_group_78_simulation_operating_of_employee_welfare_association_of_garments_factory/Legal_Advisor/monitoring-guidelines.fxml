@@ -6,10 +6,9 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="505.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Legal_Advisor.MonitoringGuidelines">
+<AnchorPane prefHeight="505.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Legal_Advisor.MonitoringGuidelinesController">
    <children>
-      <Button fx:id="ReviwButtonOA" layoutX="26.0" layoutY="14.0" mnemonicParsing="false" text="Review Requirment" />
+      <Button layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReviwButtonOA" text="Review Requirment" />
       <TableView layoutX="126.0" layoutY="41.0" prefHeight="200.0" prefWidth="410.0">
         <columns>
           <TableColumn fx:id="idCol" prefWidth="55.0" text="Id" />
@@ -21,6 +20,6 @@
       </TableView>
       <Button layoutX="365.0" layoutY="253.0" mnemonicParsing="false" onAction="#submitAndReviewOA" text="Submit and Review" />
       <TextArea fx:id="reviewTextarea" layoutX="331.0" layoutY="308.0" prefHeight="142.0" prefWidth="200.0" />
-      <Button fx:id="ReviwButtonOA1" layoutX="86.0" layoutY="450.0" mnemonicParsing="false" text="Return Home" />
+      <Button layoutX="86.0" layoutY="450.0" mnemonicParsing="false" onAction="#ReturnHomeButtonOA" text="Return Home" />
    </children>
 </AnchorPane>

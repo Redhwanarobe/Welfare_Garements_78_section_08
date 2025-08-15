@@ -1,24 +1,22 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Medical_Officer;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 public class ManagePhrmecyController
 {
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TableColumn<ManagePhrmecyClass,String> nameCol;
     @javafx.fxml.FXML
-    private TableColumn expiredDateCol;
+    private TableColumn<ManagePhrmecyClass,String> expiredDateCol;
     @javafx.fxml.FXML
-    private TableColumn stockdateCol;
+    private TableColumn<ManagePhrmecyClass,String> stockdateCol;
     @javafx.fxml.FXML
-    private TableColumn totalMedicineCol;
+    private TableColumn<ManagePhrmecyClass,String> totalMedicineCol;
     @javafx.fxml.FXML
-    private ComboBox ModuleComboBox;
+    private ComboBox<String>ModuleComboBox;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<ManagePhrmecyClass> TableView;
     @javafx.fxml.FXML
     private TextField NameTextField;
     @javafx.fxml.FXML

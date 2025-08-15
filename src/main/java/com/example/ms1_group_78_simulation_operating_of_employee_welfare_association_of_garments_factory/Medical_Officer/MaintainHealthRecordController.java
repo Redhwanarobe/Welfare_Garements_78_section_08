@@ -11,13 +11,13 @@ public class MaintainHealthRecordController
     @javafx.fxml.FXML
     private Label filenameLabel;
     @javafx.fxml.FXML
-    private TableColumn departmentCol;
+    private TableColumn<MaintainHealthRecordClass,String> departmentCol;
     @javafx.fxml.FXML
-    private TableColumn statusCol;
+    private TableColumn<MaintainHealthRecordClass,String> statusCol;
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TableColumn<MaintainHealthRecordClass,String> nameCol;
     @javafx.fxml.FXML
-    private TableColumn employeeIdCol;
+    private TableColumn<MaintainHealthRecordClass,String> employeeIdCol;
     @javafx.fxml.FXML
     private Label ErrorMessagelabel;
 

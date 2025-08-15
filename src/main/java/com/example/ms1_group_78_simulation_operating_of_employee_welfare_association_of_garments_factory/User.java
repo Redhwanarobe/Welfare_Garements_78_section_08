@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public abstract class User {
-    private String id,name,phoneNo,email,address,password;
+    private String id, name, phoneNo, email, address, password;
     private LocalDate dob;
 
     public User(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
@@ -50,119 +50,128 @@ public abstract class User {
         this.email = email;
 =======
 
-public class User {
-    private String userName, userID, phnNumber, address, password, gender, userRole;
-    private LocalDate dob;
+        public class User {
+            private String userName, userID, phnNumber, address, password, gender, userRole;
+            private LocalDate dob;
 
-    public User(String userName, String userID, String phnNumber, String address, String password, String gender, String userRole, LocalDate dob) {
-        this.userName = userName;
-        this.userID = userID;
-        this.phnNumber = phnNumber;
-        this.address = address;
-        this.password = password;
-        this.gender = gender;
-        this.userRole = userRole;
-        this.dob = dob;
-    }
+            public User(String userName, String userID, String phnNumber, String address, String password, String gender, String userRole, LocalDate dob) {
+                this.userName = userName;
+                this.userID = userID;
+                this.phnNumber = phnNumber;
+                this.address = address;
+                this.password = password;
+                this.gender = gender;
+                this.userRole = userRole;
+                this.dob = dob;
+            }
 
-    public String getUserName() {
-        return userName;
-    }
+            public String getUserName() {
+                return userName;
+            }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+            public void setUserName(String userName) {
+                this.userName = userName;
+            }
 
-    public String getUserID() {
-        return userID;
-    }
+            public String getUserID() {
+                return userID;
+            }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }
+            public void setUserID(String userID) {
+                this.userID = userID;
+            }
 
-    public String getPhnNumber() {
-        return phnNumber;
-    }
+            public String getPhnNumber() {
+                return phnNumber;
+            }
 
-    public void setPhnNumber(String phnNumber) {
-        this.phnNumber = phnNumber;
->>>>>>> aeb27ad00fb7af044aafc7aecd836f0c0805fc4b
-    }
+            public void setPhnNumber(String phnNumber) {
+                this.phnNumber = phnNumber;
+>>>>>>>aeb27ad00fb7af044aafc7aecd836f0c0805fc4b
+            }
 
-    public String getAddress() {
-        return address;
-    }
+            public String getAddress() {
+                return address;
+            }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+            public void setAddress(String address) {
+                this.address = address;
+            }
 
-    public String getPassword() {
-        return password;
-    }
+            public String getPassword() {
+                return password;
+            }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+            public void setPassword(String password) {
+                this.password = password;
+            }
 
-<<<<<<< HEAD
+<<<<<<<HEAD
 =======
-    public String getGender() {
-        return gender;
-    }
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+            public String getGender() {
+                return gender;
+            }
 
-    public String getUserRole() {
-        return userRole;
-    }
+            public void setGender(String gender) {
+                this.gender = gender;
+            }
 
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
-    }
+            public String getUserRole() {
+                return userRole;
+            }
 
->>>>>>> aeb27ad00fb7af044aafc7aecd836f0c0805fc4b
-    public LocalDate getDob() {
-        return dob;
-    }
+            public void setUserRole(String userRole) {
+                this.userRole = userRole;
+            }
 
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
-    }
+>>>>>>>aeb27ad00fb7af044aafc7aecd836f0c0805fc4b
 
-    @Override
-    public String toString() {
-        return "User{" +
-<<<<<<< HEAD
+            public LocalDate getDob() {
+                return dob;
+            }
+
+            public void setDob(LocalDate dob) {
+                this.dob = dob;
+            }
+
+            @Override
+            public String toString() {
+                return "User{" +
+                        << << << < HEAD
                 "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", phoneNo='" + phoneNo + '\'' +
-                ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
-                ", password='" + password + '\'' +
-                ", dob=" + dob +
-                '}';
-    }
-    public abstract String generateID();
-    public boolean login(String id, String password){
-        if (Objects.equals(id, this.getId()) && Objects.equals(password, this.getPassword())){
-            return true;
-        }
-        return false;
-    }
+                        ", name='" + name + '\'' +
+                        ", phoneNo='" + phoneNo + '\'' +
+                        ", email='" + email + '\'' +
+                        ", address='" + address + '\'' +
+                        ", password='" + password + '\'' +
+                        ", dob=" + dob +
+                        ;
+            }
+
+            public String generateID() {
+                return null;
+            }
+
+            public boolean login(String id, String password) {
+                if (Objects.equals(id, this.getId()) && Objects.equals(password, this.getPassword())) {
+                    return true;
+                }
+                return false;
+            }
 =======
-                "userName='" + userName + '\'' +
-                ", userID='" + userID + '\'' +
-                ", phnNumber='" + phnNumber + '\'' +
-                ", address='" + address + '\'' +
-                ", password='" + password + '\'' +
-                ", gender='" + gender + '\'' +
-                ", userRole='" + userRole + '\'' +
-                ", dob=" + dob +
-                '}';
+        "userName='"+userName +'\''+
+                    ", userID='"+userID +'\''+
+                    ", phnNumber='"+phnNumber +'\''+
+                    ", address='"+address +'\''+
+                    ", password='"+password +'\''+
+                    ", gender='"+gender +'\''+
+                    ", userRole='"+userRole +'\''+
+                    ", dob="+ dob +
+                    '}';
+        }
+>>>>>>>aeb27ad00fb7af044aafc7aecd836f0c0805fc4b
     }
->>>>>>> aeb27ad00fb7af044aafc7aecd836f0c0805fc4b
+    public abstract String generateID() ;
+    public abstract boolean login(String id, String password);
 }
