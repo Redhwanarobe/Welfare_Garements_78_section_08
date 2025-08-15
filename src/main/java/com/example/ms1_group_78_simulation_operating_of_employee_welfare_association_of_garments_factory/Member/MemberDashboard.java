@@ -17,6 +17,10 @@ public class MemberDashboard extends User {
         this.emergencyContact = emergencyContact;
     }
 
+    private String generateID() {
+        return null;
+    }
+
     public MemberDashboard(String memberDahsboard, String number, String mail, String uttara, String number1, LocalDate of) {
         super();
     }
@@ -26,10 +30,10 @@ public class MemberDashboard extends User {
     public String toString() {
         return
                 super.toString() + '\n'+
-                "EmergencyContact='" + emergencyContact + '\n' +
-                "Status=" + status
+                        "EmergencyContact='" + emergencyContact + '\n' +
+                        "Status=" + status
 
-                 ;
+                ;
     }
 
     public int getStatus() {
@@ -48,14 +52,11 @@ public class MemberDashboard extends User {
         this.emergencyContact = emergencyContact;
     }
 
+ 
+
+
     @Override
-    public String generateID() {
-        String id = "";
-        Random random = new Random();
-        id = Integer.toString(random.nextInt(1000000, 9999999)) ;
-        return id;
+    public User login(String id, String password) {
+        return null;
     }
-
-
-
 }

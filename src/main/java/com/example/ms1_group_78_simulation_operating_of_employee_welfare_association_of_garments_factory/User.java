@@ -1,26 +1,45 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory;
 
+
+import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Objects;
 
-public abstract class  User {
-    private String id,name,phoneNo,email,address,password;
-    private LocalDate dob ,doj;
+public abstract class User implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private String name;
+    private String id;
+    private String phone;
+    private String address;
+    private String password;
+    private String dob;
+    private String gender;
+    private String role;
 
-    public User(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
-
+    public User() {
+    }
+    public User(String name, String id, String phone, String address, String password,
+                String dob, String gender, String role) {
         this.name = name;
-        this.phoneNo = phoneNo;
-        this.email = email;
+        this.id = id;
+        this.phone = phone;
         this.address = address;
         this.password = password;
         this.dob = dob;
-        this.doj= LocalDate.now();
-        this.id = this.generateID();
+        this.gender = gender;
+        this.role = role;
     }
 
-    public User() {
+    public User(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
+    }
 
+    // Getters and setters
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getId() {
@@ -31,28 +50,12 @@ public abstract class  User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getAddress() {
@@ -71,35 +74,30 @@ public abstract class  User {
         this.password = password;
     }
 
-    public LocalDate getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(LocalDate dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
-    @Override
-    public String toString() {
-        return
-                "Id= " + id + '\n' +
-                "Name= " + name + '\n' +
-                "PhoneNo= " + phoneNo + '\n' +
-                "Email= " + email + '\n' +
-                "Address= " + address + '\n' +
-                "Password= " + password + '\n' +
-                "Date of birth= " + dob ;
-    }
-    public abstract String generateID();
-    public boolean login (String id,String password){
-        if (id == this.getId() && password == this.getPassword()){
-            return true;
-        }
-
-        return false;
+    public String getGender() {
+        return gender;
     }
 
-    public boolean Login(String id, String password) {
-        return false ;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    // Abstract method to be implemented by subclasses
+    public abstract User login(String id, String password);
 }

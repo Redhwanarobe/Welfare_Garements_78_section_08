@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="732.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.FeedBackViewController">
+<AnchorPane prefHeight="732.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Controllers.FeedBackViewController">
    <children>
       <Label alignment="CENTER" layoutY="-8.0" prefHeight="68.0" prefWidth="720.0" style="-fx-background-color: black;" text="Feedback " textFill="WHITE">
          <font>
