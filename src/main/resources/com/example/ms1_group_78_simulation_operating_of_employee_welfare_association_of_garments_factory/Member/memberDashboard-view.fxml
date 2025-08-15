@@ -20,7 +20,7 @@
             <Button mnemonicParsing="false" onAction="#mexportdoc" prefHeight="32.0" prefWidth="208.0" text="View and export Complain doc" />
             <Button mnemonicParsing="false" onAction="#mwelfareOA" prefHeight="32.0" prefWidth="208.0" text="welfare event announcements" />
             <Button mnemonicParsing="false" onAction="#mfinancialadviceOA" prefHeight="32.0" prefWidth="208.0" text="financial advice &amp;export  doc" />
-            <Button mnemonicParsing="false" onAction="#msuggestionOA" prefHeight="32.0" prefWidth="208.0" text="Suggestion" />
+            <Button mnemonicParsing="false" onAction="#msuggestionOA" prefHeight="32.0" prefWidth="208.0" text="Feedback" />
             <Button mnemonicParsing="false" onAction="#mpresidentannoucementOA" prefHeight="32.0" prefWidth="208.0" text="President Annoucemetn" />
             <Button mnemonicParsing="false" onAction="#mFinancialAidOA" prefHeight="32.0" prefWidth="208.0" text="Financial Aid" />
             <Button mnemonicParsing="false" onAction="#msignOutOA" prefHeight="32.0" prefWidth="208.0" text="SignOut" />

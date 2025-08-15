@@ -3,34 +3,49 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+<<<<<<< HEAD
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
+=======
+import javafx.scene.layout.AnchorPane;
+>>>>>>> b6e346b08622c14c266eab1227e1dabfbb3fb68d
 
-public class RaiseAwarnessController
-{
+import java.time.LocalDate;
+
+public class RaiseAwarnessController {
     @javafx.fxml.FXML
     private DatePicker datepickerfield;
     @javafx.fxml.FXML
-    private ComboBox meterialComboBox;
+    private ComboBox<String> meterialComboBox;
     @javafx.fxml.FXML
-    private AnchorPane SucesfullsentLabel;
-
+    private Label SucesfullsentLabel;
     @javafx.fxml.FXML
     public void initialize() {
+        meterialComboBox.getItems().addAll("fire Drill and emergency Evacuation", "Health and Hygiene Awareness Day", "WorkplaceSafety Orientation");
+
     }
 
     @javafx.fxml.FXML
     public void endButtonOA(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void SentButtonOA(ActionEvent actionEvent) {
+        String material = meterialComboBox.getValue();
+        LocalDate date = (datepickerfield.getValue() != null) ?
+                LocalDate.parse(datepickerfield.getValue().toString()) : null;
+        if (material == null)
+            SucesfullsentLabel.setText(("Please Select a material first."));
+        return;
     }
+        if(LocalDate
 
+}
     @javafx.fxml.FXML
     public void uploadButtonOA(ActionEvent actionEvent) {
+        SucesfullsentLabel.getText();
+        SucesfullsentLabel.setText("Choose Material");
+        
     }
-
-    @javafx.fxml.FXML
-    public void createAwarnessButtonOA(ActionEvent actionEvent) {
-    }
-}

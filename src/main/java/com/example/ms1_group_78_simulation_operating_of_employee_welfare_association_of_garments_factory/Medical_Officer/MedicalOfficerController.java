@@ -14,15 +14,15 @@ public class MedicalOfficerController
     @javafx.fxml.FXML
     private TextField topicTextField;
     @javafx.fxml.FXML
-    private TableColumn WeightCol;
+    private TableColumn<MedicalOfficerClass,String> WeightCol;
     @javafx.fxml.FXML
-    private TableColumn BpCol;
+    private TableColumn<MedicalOfficerClass,String> BpCol;
     @javafx.fxml.FXML
-    private TableColumn sugarCol;
+    private TableColumn<MedicalOfficerClass,String> sugarCol;
     @javafx.fxml.FXML
-    private TableColumn BloodGroupCol;
+    private TableColumn<MedicalOfficerClass,String> BloodGroupCol;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<MedicalOfficerClass> TableView;
 
     @javafx.fxml.FXML
     public void initialize() {

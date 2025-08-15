@@ -7,15 +7,15 @@ import javafx.scene.control.TableView;
 public class MentalHealthCouncellingController
 {
     @javafx.fxml.FXML
-    private TableColumn caseNoCol;
+    private TableColumn<MentalHealthCouncellingClass,String> caseNoCol;
     @javafx.fxml.FXML
-    private TableColumn IdCol;
+    private TableColumn<MentalHealthCouncellingClass,String> IdCol;
     @javafx.fxml.FXML
-    private TableColumn nameCol;
+    private TableColumn<MentalHealthCouncellingClass,String> nameCol;
     @javafx.fxml.FXML
-    private TableView tableView;
+    private TableView<MentalHealthCouncellingClass> tableView;
     @javafx.fxml.FXML
-    private TableColumn reviewsCol;
+    private TableColumn<MentalHealthCouncellingClass,String> reviewsCol;
 
     @javafx.fxml.FXML
     public void initialize() {

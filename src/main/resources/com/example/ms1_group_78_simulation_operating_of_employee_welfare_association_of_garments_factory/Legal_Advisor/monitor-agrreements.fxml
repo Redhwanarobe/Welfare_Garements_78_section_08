@@ -9,7 +9,7 @@
 <AnchorPane prefHeight="473.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Legal_Advisor.MonitorAgrreementsController">
    <children>
       <Button layoutX="56.0" layoutY="40.0" mnemonicParsing="false" onAction="#contractButtonOA" text="New contract Review" />
-      <Button layoutX="204.0" layoutY="202.0" mnemonicParsing="false" text="Add Comments" />
+      <Button layoutX="204.0" layoutY="202.0" mnemonicParsing="false" onAction="#addCommentsOA" text="Add Comments" />
       <TextArea fx:id="commentTextArea" layoutX="253.0" layoutY="245.0" prefHeight="106.0" prefWidth="200.0" />
       <Button layoutX="106.0" layoutY="401.0" mnemonicParsing="false" onAction="#returnhomeOA" text="Return Home" />
       <TableView fx:id="TableView" layoutX="53.0" layoutY="81.0" prefHeight="106.0" prefWidth="227.0">

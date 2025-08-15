@@ -1,7 +1,12 @@
 module com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory {
     requires javafx.controls;
     requires javafx.fxml;
+<<<<<<< HEAD
+    requires java.desktop;
+    requires jdk.javadoc;
+=======
     requires java.xml;
+>>>>>>> b6e346b08622c14c266eab1227e1dabfbb3fb68d
 
 
     opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory to javafx.fxml;

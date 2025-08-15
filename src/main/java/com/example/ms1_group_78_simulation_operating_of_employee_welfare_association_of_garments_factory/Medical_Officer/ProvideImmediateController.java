@@ -11,7 +11,7 @@ public class ProvideImmediateController
     @javafx.fxml.FXML
     private TextField contactNumberTextField;
     @javafx.fxml.FXML
-    private ComboBox firstAidComboBox;
+    private ComboBox<String> firstAidComboBox;
     @javafx.fxml.FXML
     private TextField nidTextfield;
     @javafx.fxml.FXML
