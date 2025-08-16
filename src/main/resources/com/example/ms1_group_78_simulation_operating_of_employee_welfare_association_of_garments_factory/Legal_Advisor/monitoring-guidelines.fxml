@@ -13,8 +13,8 @@
         <columns>
           <TableColumn fx:id="idCol" prefWidth="55.0" text="Id" />
           <TableColumn fx:id="titleCol" prefWidth="107.0" text="Requirment Title" />
-            <TableColumn fx:id="decriptionCol" prefWidth="63.0" text="Description" />
-            <TableColumn fx:id="deadlineCol" prefWidth="75.0" text="Deadline" />
+            <TableColumn fx:id="decriptionCol" prefWidth="83.0" text="Description" />
+            <TableColumn fx:id="deadlineCol" prefWidth="55.0" text="Deadline" />
             <TableColumn fx:id="AsignedOfficerOA" prefWidth="110.0" text="Assigned Officer" />
         </columns>
       </TableView>

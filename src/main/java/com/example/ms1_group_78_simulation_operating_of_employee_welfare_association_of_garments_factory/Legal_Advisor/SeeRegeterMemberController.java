@@ -45,8 +45,7 @@ public class SeeRegeterMemberController
     }
 
     @javafx.fxml.FXML
-    public void returnHomeOA(ActionEvent actionEvent) {
-        System.out.println("Returning to dashboard");
+    public void returnHomeOA(ActionEvent actionEvent) {System.out.println("Returning to dashboard");
     }
 
     @javafx.fxml.FXML
