@@ -6,10 +6,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 84c3c17d45ff554a3f6c3ca88948a239fe918b4c
 
 public class SeeRegeterMemberController
 {

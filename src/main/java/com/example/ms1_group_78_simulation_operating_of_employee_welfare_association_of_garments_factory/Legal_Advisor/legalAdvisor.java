@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.Random;
 
 public class legalAdvisor extends User {
-    private int status ; // status == 2 pending; 1 == accepted; 0 ==rejected
+    private int status; // status == 2 pending; 1 == accepted; 0 ==rejected
 
     public legalAdvisor(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
         //super(name, phoneNo, email, address, password, dob);
@@ -29,8 +29,8 @@ public class legalAdvisor extends User {
         this.status = status;
     }
 
-   // @Override
-    public String  generateID() {
+    // @Override
+    public String generateID() {
         String id = "";
 
         Random random = new Random();
@@ -38,8 +38,9 @@ public class legalAdvisor extends User {
         return id;
 
     }
+
     @Override
-    public boolean login(String id, String password) {
-        return  false;
+    public User login(String id, String password) {
+        return null;
     }
 }

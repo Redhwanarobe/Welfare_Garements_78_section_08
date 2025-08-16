@@ -11,11 +11,9 @@ public class MemberDashboard extends User {
 
 
     public MemberDashboard(String name, String phoneNo, String email, String address, String password, LocalDate dob, int status, String emergencyContact) {
-<<<<<<< HEAD
+
 //        super(name, phoneNo, email, address, password, dob);
-=======
         //super(name, phoneNo, email, address, password, dob);
->>>>>>> 84c3c17d45ff554a3f6c3ca88948a239fe918b4c
         this.setId(this.generateID());
         this.status = 2;
         this.emergencyContact = emergencyContact;
