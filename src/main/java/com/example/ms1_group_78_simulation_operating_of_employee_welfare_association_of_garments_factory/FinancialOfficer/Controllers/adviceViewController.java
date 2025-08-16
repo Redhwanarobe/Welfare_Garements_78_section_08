@@ -19,6 +19,7 @@ public class adviceViewController
 
     @javafx.fxml.FXML
     public void initialize() throws IOException{
+        ArrayLists.userArrayList.clear();
         File file = new File("data/users/Member.bin");
         if (!file.exists()){
             return;
@@ -28,7 +29,9 @@ public class adviceViewController
         try{
             while(true){
                 User user = (User) ois.readObject();
-                ArrayLists.userArrayList.add(user);
+                if (user.getRole().equalsIgnoreCase("Member")) {
+                    ArrayLists.userArrayList.add(user);
+                }
             }
         } catch (EOFException eof){
             System.out.println("End of file");
@@ -71,8 +74,5 @@ public class adviceViewController
         adviceTextfield.clear();
 
         AlertHelper.showAlert("Successful", "Successfully Sent advice to the selected member", Alert.AlertType.INFORMATION);
-
-
-
     }
 }

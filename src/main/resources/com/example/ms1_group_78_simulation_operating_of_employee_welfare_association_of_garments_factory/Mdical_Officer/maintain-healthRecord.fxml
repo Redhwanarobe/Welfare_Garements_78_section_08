@@ -10,10 +10,10 @@
 
 <AnchorPane prefHeight="539.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Medical_Officer.MaintainHealthRecordController">
    <children>
-      <TextField layoutX="122.0" layoutY="33.0" onAction="#IdTextField" />
+      <TextField fx:id="SearchIdField" layoutX="122.0" layoutY="33.0" />
       <Text layoutX="31.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search ID" />
       <Button layoutX="213.0" layoutY="76.0" mnemonicParsing="false" onAction="#searchButtonOA" text="Search Button" />
-      <TableView layoutX="71.0" layoutY="123.0" prefHeight="200.0" prefWidth="306.0">
+      <TableView fx:id="tableViewFxid" layoutX="71.0" layoutY="123.0" prefHeight="200.0" prefWidth="306.0">
         <columns>
           <TableColumn fx:id="employeeIdCol" prefWidth="75.0" text="Employee ID" />
             <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
@@ -23,6 +23,5 @@
       </TableView>
       <Label fx:id="filenameLabel" layoutX="245.0" layoutY="633.0" prefHeight="25.0" prefWidth="133.0" />
       <Button layoutX="110.0" layoutY="499.0" mnemonicParsing="false" onAction="#returnHomeButtonOA" text="Return Home" />
-      <Label fx:id="ErrorMessagelabel" layoutX="352.0" layoutY="413.0" text="Label" />
    </children>
 </AnchorPane>

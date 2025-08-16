@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -20,11 +20,12 @@
             <TableColumn fx:id="p6col1" prefWidth="75.0" text="Complain Id" />
             <TableColumn fx:id="p6col2" prefWidth="150.0" text="Member Name" />
             <TableColumn fx:id="p6col3" prefWidth="142.0" text="Complaint Text" />
+            <TableColumn fx:id="subject" prefWidth="142.0" text="Subject" />
          </columns>
       </TableView>
-      <Label layoutX="53.0" layoutY="408.0" prefHeight="17.0" prefWidth="138.0" text="Select Complain Id" />
-      <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" onAction="#p6acceptOA" text="Accept" />
-      <Button layoutX="456.0" layoutY="404.0" mnemonicParsing="false" onAction="#p6denyOA" text="Deny" />
-      <ComboBox fx:id="p6combox" layoutX="166.0" layoutY="404.0" prefWidth="150.0" />
+      <Button layoutX="48.0" layoutY="398.0" mnemonicParsing="false" onAction="#p6acceptOA" text="View" />
+      <Button layoutX="152.0" layoutY="398.0" mnemonicParsing="false" onAction="#filterOA" text="Filter" />
+      <TextField fx:id="filter1" layoutX="439.0" layoutY="411.0" />
+      <Label layoutX="353.0" layoutY="415.0" text="memberid" />
    </children>
 </AnchorPane>

@@ -11,6 +11,4 @@ public class AlertHelper {
         alert.setContentText(message);
         alert.showAndWait();
     }
-
-
 }

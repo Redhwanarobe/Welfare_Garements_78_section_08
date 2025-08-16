@@ -32,16 +32,22 @@
          </font>
       </Label>
       <TextField fx:id="pensionField" layoutX="64.0" layoutY="290.0" prefHeight="38.0" prefWidth="200.0" />
-      <ComboBox fx:id="userComboBox" layoutX="339.0" layoutY="290.0" prefHeight="38.0" prefWidth="200.0" />
-      <Label layoutX="339.0" layoutY="254.0" prefHeight="26.0" prefWidth="176.0" text="Select a User">
+      <ComboBox fx:id="userComboBox" layoutX="64.0" layoutY="381.0" prefHeight="38.0" prefWidth="200.0" />
+      <Label layoutX="64.0" layoutY="347.0" prefHeight="26.0" prefWidth="176.0" text="Select a User">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="229.0" layoutY="412.0" mnemonicParsing="false" onAction="#requestPaymentButton" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: black;" text="Request Payment" textFill="WHITE">
+      <Button layoutX="229.0" layoutY="454.0" mnemonicParsing="false" onAction="#requestPaymentButton" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: black;" text="Request Payment" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
+      <ComboBox fx:id="roleComboBox1" layoutX="339.0" layoutY="290.0" onAction="#roleSelectButton" prefHeight="38.0" prefWidth="200.0" />
+      <Label layoutX="339.0" layoutY="254.0" prefHeight="26.0" prefWidth="176.0" text="Select Role">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

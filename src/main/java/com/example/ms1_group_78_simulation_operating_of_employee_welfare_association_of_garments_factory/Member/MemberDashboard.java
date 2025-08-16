@@ -11,7 +11,7 @@ public class MemberDashboard extends User {
 
 
     public MemberDashboard(String name, String phoneNo, String email, String address, String password, LocalDate dob, int status, String emergencyContact) {
-        super(name, phoneNo, email, address, password, dob);
+        //super(name, phoneNo, email, address, password, dob);
         this.setId(this.generateID());
         this.status = 2;
         this.emergencyContact = emergencyContact;
@@ -52,7 +52,7 @@ public class MemberDashboard extends User {
         this.emergencyContact = emergencyContact;
     }
 
- 
+
 
 
     @Override

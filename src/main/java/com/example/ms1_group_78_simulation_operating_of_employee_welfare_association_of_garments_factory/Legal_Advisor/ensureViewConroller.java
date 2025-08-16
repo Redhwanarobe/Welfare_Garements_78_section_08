@@ -7,16 +7,19 @@ import javafx.scene.control.TableView;
 public class ensureViewConroller
 {
     @javafx.fxml.FXML
-    private TableColumn IdCol;
+    private TableColumn<ensureViewClass,String> IdCol;
     @javafx.fxml.FXML
-    private TableColumn userRoleCpl;
+    private TableColumn<ensureViewClass,String> userRoleCpl;
     @javafx.fxml.FXML
-    private TableColumn NameCol;
+    private TableColumn<ensureViewClass,String> NameCol;
     @javafx.fxml.FXML
-    private TableView TableViewfxid;
+    private TableView<ensureViewClass> TableViewfxid;
+
+
 
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     @javafx.fxml.FXML

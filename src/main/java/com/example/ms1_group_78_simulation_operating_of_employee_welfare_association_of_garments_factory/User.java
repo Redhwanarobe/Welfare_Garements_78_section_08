@@ -2,7 +2,6 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public abstract class User implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -27,9 +26,6 @@ public abstract class User implements Serializable {
         this.dob = dob;
         this.gender = gender;
         this.role = role;
-    }
-
-    public User(String name, String phoneNo, String email, String address, String password, LocalDate dob) {
     }
 
     // Getters and setters
