@@ -1,5 +1,6 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member;
 
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.AlertHelper;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Training_coordinator.Program;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Training_coordinator.Programdetails;
 import javafx.event.ActionEvent;
@@ -48,6 +49,7 @@ public class FeedbacktoPresidentViewController
             }
             Feedback_to_president feedbackToPresident = new Feedback_to_president (name,title,feedback,segment,date);
             Feedbackdetais.addfeedbacks(feedbackToPresident);
+            AlertHelper.showAlert("Sucessfull", "Succesfully send.", Alert.AlertType.CONFIRMATION);
             memberTF.clear();
             subject_MTF.clear();
             memberTA.clear();

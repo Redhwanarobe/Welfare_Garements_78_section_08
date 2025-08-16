@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -21,12 +20,8 @@
             <TableColumn fx:id="p3col2" prefWidth="150.0" text="Member Name" />
             <TableColumn fx:id="p3col3" prefWidth="142.0" text="Reason" />
             <TableColumn fx:id="p3col4" prefWidth="142.0" text="Ammount" />
-            <TableColumn fx:id="p3col5" prefWidth="142.0" text="Type" />
          </columns>
       </TableView>
-      <Label layoutX="53.0" layoutY="408.0" prefHeight="17.0" prefWidth="138.0" text="Select Request Id " />
-      <Button layoutX="381.0" layoutY="404.0" mnemonicParsing="false" onAction="#p3acceptOA" text="Accept" />
-      <Button layoutX="456.0" layoutY="404.0" mnemonicParsing="false" onAction="#p3denyOA" text="Deny" />
-      <ComboBox fx:id="p3combox" layoutX="166.0" layoutY="404.0" prefWidth="150.0" />
+      <Button layoutX="33.0" layoutY="411.0" mnemonicParsing="false" onAction="#p3acceptOA" text="Accept" />
    </children>
 </AnchorPane>
