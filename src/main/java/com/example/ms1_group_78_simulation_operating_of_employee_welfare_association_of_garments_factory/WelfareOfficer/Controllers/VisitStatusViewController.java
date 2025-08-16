@@ -35,7 +35,7 @@ public class VisitStatusViewController
         idCol.setCellValueFactory(new PropertyValueFactory<statusModel, String>("id"));
         nameCol.setCellValueFactory(new PropertyValueFactory<statusModel, String>("name"));
         visitCol.setCellValueFactory(new PropertyValueFactory<statusModel, String>("status"));
-
+        ArrayLists.userArrayList.clear();
         File file = new File("data/users/Member.bin");
         if (!file.exists()){
             return;

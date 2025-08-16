@@ -25,7 +25,7 @@ public class SeeRegeterMemberController
 
 
     ObservableList<SeeRegeterMemberClass>memberList;
-    
+
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -64,7 +64,7 @@ public class MediateConflictController
 
     @javafx.fxml.FXML
     public void addOutComeOA(ActionEvent actionEvent) {
-        String
+
             if(getTextArea== null) {
                 getTextArea.setText("Text field is Empty");
             }

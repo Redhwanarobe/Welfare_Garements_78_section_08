@@ -52,7 +52,7 @@ public class MemberDashboard extends User {
         this.emergencyContact = emergencyContact;
     }
 
- 
+
 
 
     @Override

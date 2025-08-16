@@ -3,7 +3,7 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
-<<<<<<< HEAD
+
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
@@ -46,5 +46,5 @@ public class RaiseAwarnessController {
     public void uploadButtonOA(ActionEvent actionEvent) {
         SucesfullsentLabel.getText();
         SucesfullsentLabel.setText("Choose Material");
-        
+
     }

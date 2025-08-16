@@ -1,24 +1,8 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory;
 
 
-import javax.lang.model.element.Name;
 import java.io.Serializable;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-public abstract class User {
-    private String id, name, phoneNo, email, address, password;
-    private LocalDate dob;
-
-    public User(String name, String id, String phone, String address, String password, String dob, String gender, String role) {
-    }
-
-    public User(String EmployeeID,) {
-
-    }
-=======
-=======
->>>>>>> fc7ef3898c33916620ac9ab39f1e81b6bec616f7
 public abstract class User implements Serializable {
     private static final long serialVersionUID = 1L;
     private String name;

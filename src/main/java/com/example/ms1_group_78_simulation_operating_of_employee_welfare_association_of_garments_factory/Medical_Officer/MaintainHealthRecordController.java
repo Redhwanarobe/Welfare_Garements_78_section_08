@@ -52,10 +52,7 @@ public class MaintainHealthRecordController
 
     @javafx.fxml.FXML
     public void searchButtonOA(ActionEvent actionEvent) {
-        String
-
-
-          if(SearchIdField.isCache()) {
+        if(SearchIdField.isCache()) {
         tableViewFxid.setItems(employeeList);
         return;
           }

@@ -8,37 +8,42 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="761.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Controllers.MemberHistoryViewController">
+<AnchorPane prefHeight="778.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Controllers.MemberHistoryViewController">
    <children>
-      <TableView layoutX="86.0" layoutY="91.0" prefHeight="358.0" prefWidth="519.0">
+      <TableView fx:id="histOrytableView" layoutX="94.0" layoutY="297.0" prefHeight="358.0" prefWidth="519.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Member ID" />
-          <TableColumn prefWidth="132.79998779296875" text="Member Name" />
-            <TableColumn prefWidth="127.20001220703125" text="Visit Status" />
-            <TableColumn prefWidth="184.00003051757812" text="Complaint Status" />
+          <TableColumn fx:id="IDCol" prefWidth="211.1999740600586" text="Member" />
+            <TableColumn fx:id="vStatusCol" prefWidth="156.800048828125" text="Feedback Status" />
+            <TableColumn fx:id="ComStatusCol" prefWidth="152.00003051757812" text="Complaint Status" />
         </columns>
       </TableView>
-      <Label layoutX="86.0" layoutY="492.0" text="Visit Status">
+      <Label layoutX="94.0" layoutY="98.0" text="Member">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="86.0" layoutY="523.0" prefHeight="43.0" prefWidth="239.0" />
-      <Label layoutX="365.0" layoutY="492.0" text="Complaint Status">
+      <ComboBox fx:id="memberComboBox" layoutX="94.0" layoutY="129.0" prefHeight="43.0" prefWidth="239.0" />
+      <Label layoutX="373.0" layoutY="98.0" text="Complaint Resolve Status">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="365.0" layoutY="523.0" prefHeight="43.0" prefWidth="239.0" />
-      <Button layoutX="272.0" layoutY="637.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="147.0" style="-fx-background-color: black;" text="Check History" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
+      <ComboBox fx:id="comstatusComboBox" layoutX="373.0" layoutY="129.0" prefHeight="43.0" prefWidth="239.0" />
       <Label alignment="CENTER" layoutY="-10.0" prefHeight="70.0" prefWidth="707.0" style="-fx-background-color: black;" text="Member History" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="25.0" />
          </font>
       </Label>
+      <Button layoutX="280.0" layoutY="683.0" mnemonicParsing="false" onAction="#statusButton" prefHeight="50.0" prefWidth="147.0" style="-fx-background-color: black;" text="Change Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="94.0" layoutY="185.0" text="Feedback Status">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="visitStatusComboBox" layoutX="94.0" layoutY="216.0" prefHeight="43.0" prefWidth="239.0" />
    </children>
 </AnchorPane>

@@ -23,6 +23,7 @@ public class FeedBackViewController
 
     @javafx.fxml.FXML
     public void initialize() throws IOException {
+        ArrayLists.userArrayList.clear();
         File file = new File("data/users/Member.bin");
         if(!file.exists()){
             return;
@@ -39,7 +40,9 @@ public class FeedBackViewController
         }
 
         for (User user : ArrayLists.userArrayList){
-            memberComboBox.getItems().add(user.getId() + " - " + user.getName());
+            if ("Member".equalsIgnoreCase(user.getRole())) {
+                memberComboBox.getItems().add(user.getId() + " - " + user.getName());
+            }
         }
 
     }

@@ -17,15 +17,9 @@ public class Employee extends User implements Serializable {
         super(name, id, phone, address, password, dob, gender, role);
     }
 
-    public Employee(String id, String fahim, String hr, String Healthy) {
-        super();
-    }
-
     @Override
     public User login(String id, String password) {
         // Implement your login logic here (optional)
         return null;
     }
-
-
 }

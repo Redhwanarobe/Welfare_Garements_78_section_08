@@ -77,17 +77,31 @@ public class LoginController
 
                 String fxmlPath;
                 switch (selectedRole) {
-                    //case "Member":
-                    //  fxmlPath = "";
-                    //  break;
-                    //case "Union Leader":
-                    //  fxmlPath = ""
-                    //  break;
+                    case "Member":
+                      fxmlPath = "Member/memberDashboard-view.fxml";
+                      break;
+                    case "Union Leader":
+                      fxmlPath = "President_UnionLeader/presidentDashboard.fxml";
+                      break;
                     case "Financial Officer":
                         fxmlPath = "FinancialOfficer/dashboardView.fxml";
                         break;
                     case "Welfare Officer":
                         fxmlPath = "WelfareOfficer/dashboardViewWellfareOfficer.fxml";
+                        break;
+//                    case "Medical Officer":
+//                        fxmlPath = "Mdical_Officer/";
+//                        break;
+                    case "Legal Advisor":
+                        fxmlPath = "Legal_Advisor/LegalAdvisor_Dashbboard.fxml";
+                        break;
+
+                    case "Event Manager":
+                        fxmlPath = "Event_manager/eventdashboard.fxml";
+                        break;
+
+                    case "Training Co-ordinator":
+                        fxmlPath = "Training_coordinator/Dashbaord.fxml";
                         break;
 
                     default:
