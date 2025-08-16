@@ -20,8 +20,7 @@ import java.awt.datatransfer.StringSelection;
 
 
 public class AssistCompansationController
-{
-    @javafx.fxml.FXML
+{    @javafx.fxml.FXML
     private TableColumn<AssistCompansationClass,String> DescriptionCol;
     @javafx.fxml.FXML
     private TableColumn<AssistCompansationClass,String> DateCol;

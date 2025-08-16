@@ -4,6 +4,7 @@ import com.example.ms1_group_78_simulation_operating_of_employee_welfare_associa
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.AllocateFundModel;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.Employee;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.paymentMenuModel;
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.Financial_Aid;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member.SubmitComplain;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.User;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.WelfareOfficer.Models.FeedbackModel;
@@ -24,5 +25,6 @@ public class ArrayLists {
 
 
     public static ArrayList<SubmitComplain> submitComplainArrayList = new ArrayList<>();
+    public static ArrayList<Financial_Aid>  financial_aidArrayList = new ArrayList<>();
 
 }

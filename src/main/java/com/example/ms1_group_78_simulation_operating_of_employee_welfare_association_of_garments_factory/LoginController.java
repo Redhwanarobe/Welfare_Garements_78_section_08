@@ -90,7 +90,11 @@ public class LoginController
                         fxmlPath = "WelfareOfficer/dashboardViewWellfareOfficer.fxml";
                         break;
                     case "Medical Officer":
+<<<<<<< HEAD
                         fxmlPath = "Medical_Officer/MedicalOfficer_Dashboard.fxml";
+=======
+                        fxmlPath = "Mdical_Officer/MedicalOfficer_Dashboard.fxml";
+>>>>>>> 6e9c10dc5dfd7621c450f91f0d710112a3b97570
                         break;
                     case "Legal Advisor":
                         fxmlPath = "Legal_Advisor/LegalAdvisor_Dashbboard.fxml";

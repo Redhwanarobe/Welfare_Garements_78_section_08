@@ -1,8 +1,10 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Member;
 
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.AlertHelper;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.AppendableObjectOutputStream;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.ArrayLists;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -38,6 +40,7 @@ public class SubmitComplainController
         String name = namee.getText();
         String id = idd.getText();
         SubmitComplain complain = new SubmitComplain(subject, description,name,id);
+        AlertHelper.showAlert("Sucessfull", "Succesfully send.", Alert.AlertType.CONFIRMATION);
 
 
         File file = new File("data/submitCompain.bin");

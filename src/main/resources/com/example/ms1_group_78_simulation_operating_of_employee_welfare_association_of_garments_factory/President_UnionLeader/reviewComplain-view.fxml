@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -24,8 +23,5 @@
          </columns>
       </TableView>
       <Button layoutX="48.0" layoutY="398.0" mnemonicParsing="false" onAction="#p6acceptOA" text="View" />
-      <Button layoutX="152.0" layoutY="398.0" mnemonicParsing="false" onAction="#filterOA" text="Filter" />
-      <TextField fx:id="filter1" layoutX="439.0" layoutY="411.0" />
-      <Label layoutX="353.0" layoutY="415.0" text="memberid" />
    </children>
 </AnchorPane>

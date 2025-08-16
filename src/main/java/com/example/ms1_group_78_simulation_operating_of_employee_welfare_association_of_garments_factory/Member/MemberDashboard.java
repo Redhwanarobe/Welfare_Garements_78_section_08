@@ -10,6 +10,7 @@ public class MemberDashboard extends User {
     private  String emergencyContact;
 
 
+<<<<<<< HEAD
     public MemberDashboard(String name, String phoneNo, String email, String address, String password, LocalDate dob, int status, String emergencyContact) {
 
 //        super(name, phoneNo, email, address, password, dob);
@@ -18,6 +19,17 @@ public class MemberDashboard extends User {
         this.status = 2;
         this.emergencyContact = emergencyContact;
     }
+=======
+//    public class //        super(name, phoneNo, email, address, password, dob);
+//
+//        //super(name, phoneNo, email, address, password, dob);
+//        MemberDashboard(String name, String phoneNo, String email, String address, String password, LocalDate dob, int status, String emergencyContact) {
+//
+//        this.setId(this.generateID());
+//        this.status = 2;
+//        this.emergencyContact = emergencyContact;
+//    }
+>>>>>>> 6e9c10dc5dfd7621c450f91f0d710112a3b97570
 
     private String generateID() {
         return null;
