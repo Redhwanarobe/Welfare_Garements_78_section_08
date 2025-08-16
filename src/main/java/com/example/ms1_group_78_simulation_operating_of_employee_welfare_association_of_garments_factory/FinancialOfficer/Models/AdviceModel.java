@@ -3,28 +3,11 @@ package com.example.ms1_group_78_simulation_operating_of_employee_welfare_associ
 import java.io.Serializable;
 
 public class AdviceModel implements Serializable {
-    private String name, id, advice;
+    private String member, advice;
 
-    public AdviceModel(String name, String id, String advice) {
-        this.name = name;
-        this.id = id;
+    public AdviceModel(String member, String advice) {
+        this.member = member;
         this.advice = advice;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getAdvice() {
@@ -35,11 +18,18 @@ public class AdviceModel implements Serializable {
         this.advice = advice;
     }
 
+    public String getMember() {
+        return member;
+    }
+
+    public void setMember(String member) {
+        this.member = member;
+    }
+
     @Override
     public String toString() {
         return "AdviceModel{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
+                "member='" + member + '\'' +
                 ", advice='" + advice + '\'' +
                 '}';
     }

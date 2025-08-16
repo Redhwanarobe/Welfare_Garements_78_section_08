@@ -17,7 +17,6 @@ import jdk.javadoc.doclet.Reporter;
 
 import java.awt.datatransfer.StringSelection;
 
-import static jdk.internal.org.jline.utils.Colors.s;
 
 public class AssistCompansationController
 {

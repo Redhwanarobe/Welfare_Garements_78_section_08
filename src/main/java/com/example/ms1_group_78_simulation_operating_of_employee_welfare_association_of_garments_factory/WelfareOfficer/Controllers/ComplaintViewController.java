@@ -11,7 +11,10 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.io.*;
 import java.time.LocalDate;
 
-public class ComplaintViewController
+public class
+
+
+ComplaintViewController
 {
     @javafx.fxml.FXML
     private TableColumn<complaintModel, String> idCol;

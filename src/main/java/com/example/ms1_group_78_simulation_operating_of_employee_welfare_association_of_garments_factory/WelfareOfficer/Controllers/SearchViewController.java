@@ -27,10 +27,19 @@ public class SearchViewController {
     private ComboBox<String> genderComboBox;
     @FXML
     private TableColumn<Employee, String> genderCol;
+    @FXML
+    private ComboBox<String> roleComboBox;
 
     @FXML
     public void initialize() {
         genderComboBox.getItems().addAll("Male", "Female", "Trans");
+        roleComboBox.getItems().addAll("Member",
+                "Union Leader",
+                "Medical Officer",
+                "Legal Advisor",
+                "Financial Officer",
+                "Event Manager",
+                "Training Co-ordinator");
 
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -56,12 +65,13 @@ public class SearchViewController {
         }
     }
 
+
     @FXML
-    public void loadTable(ActionEvent actionEvent) throws IOException {
+    public void roleAction(ActionEvent actionEvent) throws IOException{
         ArrayLists.employeeArrayList.clear();
         tableViewSearch.getItems().clear();
-
-        File file = new File("data/users/Member.bin");
+        String role = roleComboBox.getValue();
+        File file = new File("data/users/" + role + ".bin");
         if (!file.exists()) {
             System.out.println("File not found: " + file.getAbsolutePath());
             return;

@@ -6,7 +6,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-import static jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle.memberList;
 
 public class SeeRegeterMemberController
 {

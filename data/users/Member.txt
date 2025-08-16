@@ -1,8 +1,4 @@
 ID: 1234
-Password: xjhjxhjxhjxhLP21
-Role: Member
---------------------------------------------------
-ID: 1234
-Password: hdjhjdhjdhjhLP21
+Password: Admin123
 Role: Member
 --------------------------------------------------
