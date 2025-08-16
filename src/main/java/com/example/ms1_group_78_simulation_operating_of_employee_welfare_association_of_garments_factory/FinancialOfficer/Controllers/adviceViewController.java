@@ -1,6 +1,8 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Controllers;
 
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.AdviceModel;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.AlertHelper;
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.AppendableObjectOutputStream;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility.ArrayLists;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.User;
 import javafx.event.ActionEvent;
@@ -44,7 +46,7 @@ public class adviceViewController
     }
 
     @javafx.fxml.FXML
-    public void adviceButton(ActionEvent actionEvent) {
+    public void adviceButton(ActionEvent actionEvent) throws IOException{
         String selectedMember = memberComboBox.getValue();
         String advice = adviceTextfield.getText();
 
@@ -57,22 +59,22 @@ public class adviceViewController
             return;
         }
 
-        String memberId = selectedMember.split(" - ")[0].trim();
-
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("data/advices/advice_" + memberId + ".txt", true));
-            writer.write(advice + "\n--------------------\n");
-            writer.close();
+        AdviceModel advices = new AdviceModel(selectedMember, advice);
+       File file = new File("data/advice.bin");
+       FileOutputStream fos;
+       ObjectOutputStream oos;
+        if (file.exists()){
+            fos =  new FileOutputStream(file, true);
+            oos = new AppendableObjectOutputStream(fos);
         }
 
-        catch (IOException e) {
-            AlertHelper.showAlert("Error", "Failed to save advice.", Alert.AlertType.ERROR);
-            return;
+        else{
+            fos = new FileOutputStream(file, false);
+            oos = new ObjectOutputStream(fos);
         }
+        oos.writeObject(advices);
+        oos.close();
 
-        memberComboBox.getSelectionModel().clearSelection();
-        adviceTextfield.clear();
-
-        AlertHelper.showAlert("Successful", "Successfully Sent advice to the selected member", Alert.AlertType.INFORMATION);
+        ArrayLists.adviceModelArrayList.add(advices);
     }
 }

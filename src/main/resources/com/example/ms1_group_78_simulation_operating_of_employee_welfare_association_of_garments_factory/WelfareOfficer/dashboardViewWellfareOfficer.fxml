@@ -42,7 +42,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="359.0" layoutY="380.0" mnemonicParsing="false" onAction="#searchMenu" prefHeight="71.0" prefWidth="207.0" style="-fx-background-color: #B771E5; -fx-background-radius: 10px;" text="Member Search Menu " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <Button layoutX="359.0" layoutY="380.0" mnemonicParsing="false" onAction="#searchMenu" prefHeight="71.0" prefWidth="207.0" style="-fx-background-color: #B771E5; -fx-background-radius: 10px;" text="User Search Menu " textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

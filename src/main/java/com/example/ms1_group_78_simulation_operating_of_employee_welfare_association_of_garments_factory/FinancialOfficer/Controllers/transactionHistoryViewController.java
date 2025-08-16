@@ -14,13 +14,13 @@ import java.util.ArrayList;
 public class transactionHistoryViewController
 {
     @javafx.fxml.FXML
-    private TableColumn<AllocateFundModel, Integer> amountCol;
-    @javafx.fxml.FXML
     private TableColumn<AllocateFundModel, String> categoryCol;
     @javafx.fxml.FXML
     private TextField filterAmount;
     @javafx.fxml.FXML
     private TableView<AllocateFundModel> historyTableView;
+    @FXML
+    private TableColumn<AllocateFundModel, Integer> amountCol;
 
     @javafx.fxml.FXML
     public void initialize() {

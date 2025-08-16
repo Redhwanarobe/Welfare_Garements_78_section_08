@@ -31,7 +31,6 @@ public class PaymentRequestViewController {
                 "Union Leader",
                 "Medical Officer",
                 "Legal Advisor",
-                "Welfare Officer",
                 "Event Manager",
                 "Training Co-ordinator"
         );

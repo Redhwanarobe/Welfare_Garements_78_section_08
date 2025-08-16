@@ -38,7 +38,6 @@ public class createAccountController {
                 "Medical Officer",
                 "Legal Advisor",
                 "Financial Officer",
-                "Welfare Officer",
                 "Event Manager",
                 "Training Co-ordinator"
         );

@@ -6,6 +6,7 @@ module com.example.ms1_group_78_simulation_operating_of_employee_welfare_associa
     requires java.xml;
 
 
+
     opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory to javafx.fxml;
     opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Legal_Advisor to javafx.fxml, javafx.base ;
     opens com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.Medical_Officer to javafx.fxml, javafx.base ;

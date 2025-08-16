@@ -1,5 +1,6 @@
 package com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Utility;
 
+import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.AdviceModel;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.AllocateFundModel;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.Employee;
 import com.example.ms1_group_78_simulation_operating_of_employee_welfare_association_of_garments_factory.FinancialOfficer.Models.paymentMenuModel;
@@ -19,6 +20,7 @@ public class ArrayLists {
     public static ArrayList<paymentMenuModel> paymentArrayList = new ArrayList<>();
     public static ArrayList<statusModel> statusArrayList = new ArrayList<>();
     public static ArrayList<FeedbackModel> feedbackModelArrayList = new ArrayList<>();
+    public static ArrayList<AdviceModel> adviceModelArrayList = new ArrayList<>();
 
 
 
