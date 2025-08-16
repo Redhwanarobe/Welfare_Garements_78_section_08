@@ -63,9 +63,8 @@ public class createAccountController {
             case "Medical Officer" -> id.length() == 6;
             case "Legal Advisor" -> id.length() == 7;
             case "Financial Officer" -> id.length() == 8;
-            case "Welfare Officer" -> id.length() == 9;
-            case "Event Manager" -> id.length() == 10;
-            case "Training Co-ordinator" -> id.length() == 11;
+            case "Event Manager" -> id.length() == 9;
+            case "Training Co-ordinator" -> id.length() == 10;
             default -> id.length() >= 4;
         };
 
