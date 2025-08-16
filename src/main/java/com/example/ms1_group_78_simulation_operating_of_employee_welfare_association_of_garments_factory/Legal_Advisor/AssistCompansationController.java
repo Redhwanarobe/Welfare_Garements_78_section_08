@@ -17,6 +17,10 @@ import jdk.javadoc.doclet.Reporter;
 
 import java.awt.datatransfer.StringSelection;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 84c3c17d45ff554a3f6c3ca88948a239fe918b4c
 
 public class AssistCompansationController
 {
